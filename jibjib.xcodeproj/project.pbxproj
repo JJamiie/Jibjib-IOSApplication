@@ -1,0 +1,519 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CBF30A021CBB504000103DF3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CBF30A011CBB504000103DF3 /* main.m */; };
+		CBF30A051CBB504000103DF3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CBF30A041CBB504000103DF3 /* AppDelegate.m */; };
+		CBF30A081CBB504000103DF3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBF30A071CBB504000103DF3 /* ViewController.m */; };
+		CBF30A0B1CBB504000103DF3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBF30A091CBB504000103DF3 /* Main.storyboard */; };
+		CBF30A0D1CBB504000103DF3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBF30A0C1CBB504000103DF3 /* Assets.xcassets */; };
+		CBF30A101CBB504000103DF3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBF30A0E1CBB504000103DF3 /* LaunchScreen.storyboard */; };
+		CBF30A1B1CBB504000103DF3 /* jibjibTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CBF30A1A1CBB504000103DF3 /* jibjibTests.m */; };
+		CBF30A261CBB504000103DF3 /* jibjibUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CBF30A251CBB504000103DF3 /* jibjibUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CBF30A171CBB504000103DF3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CBF309F51CBB504000103DF3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CBF309FC1CBB504000103DF3;
+			remoteInfo = jibjib;
+		};
+		CBF30A221CBB504000103DF3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CBF309F51CBB504000103DF3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CBF309FC1CBB504000103DF3;
+			remoteInfo = jibjib;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CBF309FD1CBB504000103DF3 /* jibjib.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = jibjib.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBF30A011CBB504000103DF3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CBF30A031CBB504000103DF3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CBF30A041CBB504000103DF3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CBF30A061CBB504000103DF3 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		CBF30A071CBB504000103DF3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		CBF30A0A1CBB504000103DF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CBF30A0C1CBB504000103DF3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CBF30A0F1CBB504000103DF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CBF30A111CBB504000103DF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBF30A161CBB504000103DF3 /* jibjibTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = jibjibTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBF30A1A1CBB504000103DF3 /* jibjibTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = jibjibTests.m; sourceTree = "<group>"; };
+		CBF30A1C1CBB504000103DF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBF30A211CBB504000103DF3 /* jibjibUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = jibjibUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBF30A251CBB504000103DF3 /* jibjibUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = jibjibUITests.m; sourceTree = "<group>"; };
+		CBF30A271CBB504000103DF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CBF309FA1CBB504000103DF3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBF30A131CBB504000103DF3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBF30A1E1CBB504000103DF3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CBF309F41CBB504000103DF3 = {
+			isa = PBXGroup;
+			children = (
+				CBF309FF1CBB504000103DF3 /* jibjib */,
+				CBF30A191CBB504000103DF3 /* jibjibTests */,
+				CBF30A241CBB504000103DF3 /* jibjibUITests */,
+				CBF309FE1CBB504000103DF3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CBF309FE1CBB504000103DF3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CBF309FD1CBB504000103DF3 /* jibjib.app */,
+				CBF30A161CBB504000103DF3 /* jibjibTests.xctest */,
+				CBF30A211CBB504000103DF3 /* jibjibUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CBF309FF1CBB504000103DF3 /* jibjib */ = {
+			isa = PBXGroup;
+			children = (
+				CBF30A031CBB504000103DF3 /* AppDelegate.h */,
+				CBF30A041CBB504000103DF3 /* AppDelegate.m */,
+				CBF30A061CBB504000103DF3 /* ViewController.h */,
+				CBF30A071CBB504000103DF3 /* ViewController.m */,
+				CBF30A091CBB504000103DF3 /* Main.storyboard */,
+				CBF30A0C1CBB504000103DF3 /* Assets.xcassets */,
+				CBF30A0E1CBB504000103DF3 /* LaunchScreen.storyboard */,
+				CBF30A111CBB504000103DF3 /* Info.plist */,
+				CBF30A001CBB504000103DF3 /* Supporting Files */,
+			);
+			path = jibjib;
+			sourceTree = "<group>";
+		};
+		CBF30A001CBB504000103DF3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CBF30A011CBB504000103DF3 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CBF30A191CBB504000103DF3 /* jibjibTests */ = {
+			isa = PBXGroup;
+			children = (
+				CBF30A1A1CBB504000103DF3 /* jibjibTests.m */,
+				CBF30A1C1CBB504000103DF3 /* Info.plist */,
+			);
+			path = jibjibTests;
+			sourceTree = "<group>";
+		};
+		CBF30A241CBB504000103DF3 /* jibjibUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CBF30A251CBB504000103DF3 /* jibjibUITests.m */,
+				CBF30A271CBB504000103DF3 /* Info.plist */,
+			);
+			path = jibjibUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CBF309FC1CBB504000103DF3 /* jibjib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CBF30A2A1CBB504000103DF3 /* Build configuration list for PBXNativeTarget "jibjib" */;
+			buildPhases = (
+				CBF309F91CBB504000103DF3 /* Sources */,
+				CBF309FA1CBB504000103DF3 /* Frameworks */,
+				CBF309FB1CBB504000103DF3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = jibjib;
+			productName = jibjib;
+			productReference = CBF309FD1CBB504000103DF3 /* jibjib.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CBF30A151CBB504000103DF3 /* jibjibTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CBF30A2D1CBB504000103DF3 /* Build configuration list for PBXNativeTarget "jibjibTests" */;
+			buildPhases = (
+				CBF30A121CBB504000103DF3 /* Sources */,
+				CBF30A131CBB504000103DF3 /* Frameworks */,
+				CBF30A141CBB504000103DF3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CBF30A181CBB504000103DF3 /* PBXTargetDependency */,
+			);
+			name = jibjibTests;
+			productName = jibjibTests;
+			productReference = CBF30A161CBB504000103DF3 /* jibjibTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CBF30A201CBB504000103DF3 /* jibjibUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CBF30A301CBB504000103DF3 /* Build configuration list for PBXNativeTarget "jibjibUITests" */;
+			buildPhases = (
+				CBF30A1D1CBB504000103DF3 /* Sources */,
+				CBF30A1E1CBB504000103DF3 /* Frameworks */,
+				CBF30A1F1CBB504000103DF3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CBF30A231CBB504000103DF3 /* PBXTargetDependency */,
+			);
+			name = jibjibUITests;
+			productName = jibjibUITests;
+			productReference = CBF30A211CBB504000103DF3 /* jibjibUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CBF309F51CBB504000103DF3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Chulalongkorn University";
+				TargetAttributes = {
+					CBF309FC1CBB504000103DF3 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					CBF30A151CBB504000103DF3 = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = CBF309FC1CBB504000103DF3;
+					};
+					CBF30A201CBB504000103DF3 = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = CBF309FC1CBB504000103DF3;
+					};
+				};
+			};
+			buildConfigurationList = CBF309F81CBB504000103DF3 /* Build configuration list for PBXProject "jibjib" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CBF309F41CBB504000103DF3;
+			productRefGroup = CBF309FE1CBB504000103DF3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CBF309FC1CBB504000103DF3 /* jibjib */,
+				CBF30A151CBB504000103DF3 /* jibjibTests */,
+				CBF30A201CBB504000103DF3 /* jibjibUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CBF309FB1CBB504000103DF3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBF30A101CBB504000103DF3 /* LaunchScreen.storyboard in Resources */,
+				CBF30A0D1CBB504000103DF3 /* Assets.xcassets in Resources */,
+				CBF30A0B1CBB504000103DF3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBF30A141CBB504000103DF3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBF30A1F1CBB504000103DF3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CBF309F91CBB504000103DF3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBF30A081CBB504000103DF3 /* ViewController.m in Sources */,
+				CBF30A051CBB504000103DF3 /* AppDelegate.m in Sources */,
+				CBF30A021CBB504000103DF3 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBF30A121CBB504000103DF3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBF30A1B1CBB504000103DF3 /* jibjibTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBF30A1D1CBB504000103DF3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBF30A261CBB504000103DF3 /* jibjibUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CBF30A181CBB504000103DF3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CBF309FC1CBB504000103DF3 /* jibjib */;
+			targetProxy = CBF30A171CBB504000103DF3 /* PBXContainerItemProxy */;
+		};
+		CBF30A231CBB504000103DF3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CBF309FC1CBB504000103DF3 /* jibjib */;
+			targetProxy = CBF30A221CBB504000103DF3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CBF30A091CBB504000103DF3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CBF30A0A1CBB504000103DF3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CBF30A0E1CBB504000103DF3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CBF30A0F1CBB504000103DF3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CBF30A281CBB504000103DF3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CBF30A291CBB504000103DF3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CBF30A2B1CBB504000103DF3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = jibjib/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = th.ac.chula.jibjib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CBF30A2C1CBB504000103DF3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = jibjib/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = th.ac.chula.jibjib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		CBF30A2E1CBB504000103DF3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = jibjibTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = th.ac.chula.jibjibTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/jibjib.app/jibjib";
+			};
+			name = Debug;
+		};
+		CBF30A2F1CBB504000103DF3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = jibjibTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = th.ac.chula.jibjibTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/jibjib.app/jibjib";
+			};
+			name = Release;
+		};
+		CBF30A311CBB504000103DF3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = jibjibUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = th.ac.chula.jibjibUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = jibjib;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		CBF30A321CBB504000103DF3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = jibjibUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = th.ac.chula.jibjibUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = jibjib;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CBF309F81CBB504000103DF3 /* Build configuration list for PBXProject "jibjib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBF30A281CBB504000103DF3 /* Debug */,
+				CBF30A291CBB504000103DF3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CBF30A2A1CBB504000103DF3 /* Build configuration list for PBXNativeTarget "jibjib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBF30A2B1CBB504000103DF3 /* Debug */,
+				CBF30A2C1CBB504000103DF3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CBF30A2D1CBB504000103DF3 /* Build configuration list for PBXNativeTarget "jibjibTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBF30A2E1CBB504000103DF3 /* Debug */,
+				CBF30A2F1CBB504000103DF3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CBF30A301CBB504000103DF3 /* Build configuration list for PBXNativeTarget "jibjibUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBF30A311CBB504000103DF3 /* Debug */,
+				CBF30A321CBB504000103DF3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CBF309F51CBB504000103DF3 /* Project object */;
+}
