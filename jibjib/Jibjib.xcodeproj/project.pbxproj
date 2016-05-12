@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		99AE9E1A1CE463F300D9F4FC /* ProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99AE9E191CE463F300D9F4FC /* ProfileTableViewController.swift */; };
 		CB2F83A81CD352A400A882E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2F83A71CD352A400A882E6 /* AppDelegate.swift */; };
 		CB2F83AF1CD352A400A882E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB2F83AD1CD352A400A882E6 /* Main.storyboard */; };
 		CB2F83B11CD352A400A882E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB2F83B01CD352A400A882E6 /* Assets.xcassets */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		99AE9E191CE463F300D9F4FC /* ProfileTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileTableViewController.swift; path = ../ProfileTableViewController.swift; sourceTree = "<group>"; };
 		CB2F83A41CD352A400A882E6 /* Jibjib.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Jibjib.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB2F83A71CD352A400A882E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CB2F83AE1CD352A400A882E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 		CB2F83A61CD352A400A882E6 /* Jibjib */ = {
 			isa = PBXGroup;
 			children = (
+				99AE9E191CE463F300D9F4FC /* ProfileTableViewController.swift */,
 				CB2F83AD1CD352A400A882E6 /* Main.storyboard */,
 				CB456ED01CDC84C80021EF8A /* TabBarController.swift */,
 				CB456EBA1CDC80A20021EF8A /* LoginViewController.swift */,
@@ -277,6 +280,7 @@
 				CB2F83A81CD352A400A882E6 /* AppDelegate.swift in Sources */,
 				CB456ED11CDC84C80021EF8A /* TabBarController.swift in Sources */,
 				CB456EC91CDC82AA0021EF8A /* MyTopicTableViewController.swift in Sources */,
+				99AE9E1A1CE463F300D9F4FC /* ProfileTableViewController.swift in Sources */,
 				CB456EC71CDC827D0021EF8A /* FeedTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
