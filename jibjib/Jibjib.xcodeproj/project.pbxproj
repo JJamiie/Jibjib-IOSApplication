@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		99AE9E1A1CE463F300D9F4FC /* ProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99AE9E191CE463F300D9F4FC /* ProfileTableViewController.swift */; };
+		99AE9E1C1CE4729E00D9F4FC /* TestStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99AE9E1B1CE4729E00D9F4FC /* TestStoryboard.storyboard */; };
 		CB2F83A81CD352A400A882E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2F83A71CD352A400A882E6 /* AppDelegate.swift */; };
 		CB2F83AF1CD352A400A882E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB2F83AD1CD352A400A882E6 /* Main.storyboard */; };
 		CB2F83B11CD352A400A882E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB2F83B01CD352A400A882E6 /* Assets.xcassets */; };
@@ -41,6 +42,7 @@
 
 /* Begin PBXFileReference section */
 		99AE9E191CE463F300D9F4FC /* ProfileTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileTableViewController.swift; path = ../ProfileTableViewController.swift; sourceTree = "<group>"; };
+		99AE9E1B1CE4729E00D9F4FC /* TestStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TestStoryboard.storyboard; sourceTree = "<group>"; };
 		CB2F83A41CD352A400A882E6 /* Jibjib.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Jibjib.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB2F83A71CD352A400A882E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CB2F83AE1CD352A400A882E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -121,6 +123,7 @@
 				CB2F83A71CD352A400A882E6 /* AppDelegate.swift */,
 				CB2F83B21CD352A400A882E6 /* LaunchScreen.storyboard */,
 				CB2F83B51CD352A400A882E6 /* Info.plist */,
+				99AE9E1B1CE4729E00D9F4FC /* TestStoryboard.storyboard */,
 			);
 			path = Jibjib;
 			sourceTree = "<group>";
@@ -248,6 +251,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB2F83B41CD352A400A882E6 /* LaunchScreen.storyboard in Resources */,
+				99AE9E1C1CE4729E00D9F4FC /* TestStoryboard.storyboard in Resources */,
 				CB2F83B11CD352A400A882E6 /* Assets.xcassets in Resources */,
 				CB2F83AF1CD352A400A882E6 /* Main.storyboard in Resources */,
 			);
