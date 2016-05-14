@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		99AE9E1A1CE463F300D9F4FC /* ProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99AE9E191CE463F300D9F4FC /* ProfileTableViewController.swift */; };
 		99AE9E1C1CE4729E00D9F4FC /* TestStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99AE9E1B1CE4729E00D9F4FC /* TestStoryboard.storyboard */; };
+		99AE9E1E1CE654AF00D9F4FC /* HeaderProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99AE9E1D1CE654AF00D9F4FC /* HeaderProfileTableViewCell.swift */; };
+		99AE9E211CE65BD600D9F4FC /* CommentProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99AE9E201CE65BD600D9F4FC /* CommentProfileTableViewCell.swift */; };
+		99AE9E251CE718AF00D9F4FC /* ViewTranslationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99AE9E241CE718AF00D9F4FC /* ViewTranslationTableViewController.swift */; };
 		CB2F83A81CD352A400A882E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2F83A71CD352A400A882E6 /* AppDelegate.swift */; };
 		CB2F83AF1CD352A400A882E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB2F83AD1CD352A400A882E6 /* Main.storyboard */; };
 		CB2F83B11CD352A400A882E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB2F83B01CD352A400A882E6 /* Assets.xcassets */; };
@@ -18,8 +21,6 @@
 		CB456EBB1CDC80A20021EF8A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB456EBA1CDC80A20021EF8A /* LoginViewController.swift */; };
 		CB456EC71CDC827D0021EF8A /* FeedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB456EC61CDC827D0021EF8A /* FeedTableViewController.swift */; };
 		CB456EC91CDC82AA0021EF8A /* MyTopicTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB456EC81CDC82AA0021EF8A /* MyTopicTableViewController.swift */; };
-		CB456ECD1CDC835C0021EF8A /* MyProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB456ECC1CDC835C0021EF8A /* MyProfileViewController.swift */; };
-		CB456ECF1CDC844C0021EF8A /* NotificationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB456ECE1CDC844C0021EF8A /* NotificationTableViewController.swift */; };
 		CB456ED11CDC84C80021EF8A /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB456ED01CDC84C80021EF8A /* TabBarController.swift */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +44,9 @@
 /* Begin PBXFileReference section */
 		99AE9E191CE463F300D9F4FC /* ProfileTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileTableViewController.swift; path = ../ProfileTableViewController.swift; sourceTree = "<group>"; };
 		99AE9E1B1CE4729E00D9F4FC /* TestStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TestStoryboard.storyboard; sourceTree = "<group>"; };
+		99AE9E1D1CE654AF00D9F4FC /* HeaderProfileTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HeaderProfileTableViewCell.swift; path = ../HeaderProfileTableViewCell.swift; sourceTree = "<group>"; };
+		99AE9E201CE65BD600D9F4FC /* CommentProfileTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CommentProfileTableViewCell.swift; path = ../CommentProfileTableViewCell.swift; sourceTree = "<group>"; };
+		99AE9E241CE718AF00D9F4FC /* ViewTranslationTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewTranslationTableViewController.swift; path = ../ViewTranslationTableViewController.swift; sourceTree = "<group>"; };
 		CB2F83A41CD352A400A882E6 /* Jibjib.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Jibjib.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB2F83A71CD352A400A882E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CB2F83AE1CD352A400A882E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -58,8 +62,6 @@
 		CB456EBA1CDC80A20021EF8A /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		CB456EC61CDC827D0021EF8A /* FeedTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedTableViewController.swift; sourceTree = "<group>"; };
 		CB456EC81CDC82AA0021EF8A /* MyTopicTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTopicTableViewController.swift; sourceTree = "<group>"; };
-		CB456ECC1CDC835C0021EF8A /* MyProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyProfileViewController.swift; sourceTree = "<group>"; };
-		CB456ECE1CDC844C0021EF8A /* NotificationTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationTableViewController.swift; sourceTree = "<group>"; };
 		CB456ED01CDC84C80021EF8A /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -88,6 +90,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		99AE9E1F1CE65B9700D9F4FC /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				99AE9E201CE65BD600D9F4FC /* CommentProfileTableViewCell.swift */,
+				99AE9E1D1CE654AF00D9F4FC /* HeaderProfileTableViewCell.swift */,
+			);
+			name = TableViewCell;
+			sourceTree = "<group>";
+		};
+		99AE9E261CE7190B00D9F4FC /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				99AE9E241CE718AF00D9F4FC /* ViewTranslationTableViewController.swift */,
+				99AE9E191CE463F300D9F4FC /* ProfileTableViewController.swift */,
+				CB456ED01CDC84C80021EF8A /* TabBarController.swift */,
+				CB456EBA1CDC80A20021EF8A /* LoginViewController.swift */,
+				CB456EC61CDC827D0021EF8A /* FeedTableViewController.swift */,
+				CB456EC81CDC82AA0021EF8A /* MyTopicTableViewController.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		99AE9E281CE71A3200D9F4FC /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				99AE9E1B1CE4729E00D9F4FC /* TestStoryboard.storyboard */,
+				CB2F83AD1CD352A400A882E6 /* Main.storyboard */,
+			);
+			name = Storyboard;
+			sourceTree = "<group>";
+		};
 		CB2F839B1CD352A400A882E6 = {
 			isa = PBXGroup;
 			children = (
@@ -111,19 +144,13 @@
 		CB2F83A61CD352A400A882E6 /* Jibjib */ = {
 			isa = PBXGroup;
 			children = (
-				99AE9E191CE463F300D9F4FC /* ProfileTableViewController.swift */,
-				CB2F83AD1CD352A400A882E6 /* Main.storyboard */,
-				CB456ED01CDC84C80021EF8A /* TabBarController.swift */,
-				CB456EBA1CDC80A20021EF8A /* LoginViewController.swift */,
-				CB456EC61CDC827D0021EF8A /* FeedTableViewController.swift */,
-				CB456EC81CDC82AA0021EF8A /* MyTopicTableViewController.swift */,
-				CB456ECE1CDC844C0021EF8A /* NotificationTableViewController.swift */,
-				CB456ECC1CDC835C0021EF8A /* MyProfileViewController.swift */,
+				99AE9E281CE71A3200D9F4FC /* Storyboard */,
+				99AE9E261CE7190B00D9F4FC /* ViewController */,
+				99AE9E1F1CE65B9700D9F4FC /* TableViewCell */,
 				CB2F83B01CD352A400A882E6 /* Assets.xcassets */,
 				CB2F83A71CD352A400A882E6 /* AppDelegate.swift */,
 				CB2F83B21CD352A400A882E6 /* LaunchScreen.storyboard */,
 				CB2F83B51CD352A400A882E6 /* Info.plist */,
-				99AE9E1B1CE4729E00D9F4FC /* TestStoryboard.storyboard */,
 			);
 			path = Jibjib;
 			sourceTree = "<group>";
@@ -278,14 +305,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB456ECD1CDC835C0021EF8A /* MyProfileViewController.swift in Sources */,
-				CB456ECF1CDC844C0021EF8A /* NotificationTableViewController.swift in Sources */,
+				99AE9E1E1CE654AF00D9F4FC /* HeaderProfileTableViewCell.swift in Sources */,
+				99AE9E251CE718AF00D9F4FC /* ViewTranslationTableViewController.swift in Sources */,
 				CB456EBB1CDC80A20021EF8A /* LoginViewController.swift in Sources */,
 				CB2F83A81CD352A400A882E6 /* AppDelegate.swift in Sources */,
 				CB456ED11CDC84C80021EF8A /* TabBarController.swift in Sources */,
 				CB456EC91CDC82AA0021EF8A /* MyTopicTableViewController.swift in Sources */,
 				99AE9E1A1CE463F300D9F4FC /* ProfileTableViewController.swift in Sources */,
 				CB456EC71CDC827D0021EF8A /* FeedTableViewController.swift in Sources */,
+				99AE9E211CE65BD600D9F4FC /* CommentProfileTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
