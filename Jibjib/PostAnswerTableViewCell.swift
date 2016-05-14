@@ -1,5 +1,5 @@
- //
-//  HeaderProfileTableViewCell.swift
+//
+//  PostAnswerTableViewCell.swift
 //  Jibjib
 //
 //  Created by JJamie Rashata on 5/14/2559 BE.
@@ -8,11 +8,10 @@
 
 import UIKit
 
-class HeaderProfileTableViewCell: UITableViewCell {
-    @IBOutlet weak var img_profile: UIImageView!
-    @IBOutlet weak var txt_name: UILabel!
-    @IBOutlet weak var txt_work: UILabel!
-    
+class PostAnswerTableViewCell: UITableViewCell {
+
+    @IBOutlet weak var edt_type_answer: UITextField!
+    @IBOutlet weak var btn_post_answer: UIButton!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -20,7 +19,7 @@ class HeaderProfileTableViewCell: UITableViewCell {
 
     override func setSelected(selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-    
+
         // Configure the view for the selected state
     }
 

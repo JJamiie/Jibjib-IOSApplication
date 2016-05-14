@@ -42,11 +42,6 @@ class ProfileTableViewController: UITableViewController {
             // Configure the cell...
             // Set image profile to circle
             cell.selectionStyle = UITableViewCellSelectionStyle.None
-            cell.img_profile.layer.masksToBounds = false
-            cell.img_profile.layer.cornerRadius = 50
-            cell.img_profile.clipsToBounds = true
-            cell.img_profile.layer.borderWidth = 3
-            cell.img_profile.layer.borderColor = UIColor.whiteColor().CGColor
             return cell
         }else{
             let cell :CommentProfileTableViewCell = tableView.dequeueReusableCellWithIdentifier("comment_profile") as! CommentProfileTableViewCell
@@ -58,7 +53,7 @@ class ProfileTableViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        if (indexPath.row == 0) {
+        if indexPath.row == 0 {
             return 291
         } else {
             // This is your 12th cell (indexPath.row 11), as we start counting at 0

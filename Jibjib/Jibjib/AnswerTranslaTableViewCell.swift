@@ -1,5 +1,5 @@
- //
-//  HeaderProfileTableViewCell.swift
+//
+//  AnswerTranslaTableViewCell.swift
 //  Jibjib
 //
 //  Created by JJamie Rashata on 5/14/2559 BE.
@@ -8,11 +8,11 @@
 
 import UIKit
 
-class HeaderProfileTableViewCell: UITableViewCell {
+class AnswerTranslaTableViewCell: UITableViewCell {
+
     @IBOutlet weak var img_profile: UIImageView!
-    @IBOutlet weak var txt_name: UILabel!
-    @IBOutlet weak var txt_work: UILabel!
-    
+    @IBOutlet weak var lab_name: UILabel!
+    @IBOutlet weak var lab_answer: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -20,7 +20,7 @@ class HeaderProfileTableViewCell: UITableViewCell {
 
     override func setSelected(selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-    
+
         // Configure the view for the selected state
     }
 

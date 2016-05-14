@@ -7,11 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18F0AEDA8CC12F5CEF440AE8 /* Pods_JibjibTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2478102FAC52708F6503251 /* Pods_JibjibTests.framework */; };
 		99AE9E1A1CE463F300D9F4FC /* ProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99AE9E191CE463F300D9F4FC /* ProfileTableViewController.swift */; };
 		99AE9E1C1CE4729E00D9F4FC /* TestStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99AE9E1B1CE4729E00D9F4FC /* TestStoryboard.storyboard */; };
 		99AE9E1E1CE654AF00D9F4FC /* HeaderProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99AE9E1D1CE654AF00D9F4FC /* HeaderProfileTableViewCell.swift */; };
 		99AE9E211CE65BD600D9F4FC /* CommentProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99AE9E201CE65BD600D9F4FC /* CommentProfileTableViewCell.swift */; };
 		99AE9E251CE718AF00D9F4FC /* ViewTranslationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99AE9E241CE718AF00D9F4FC /* ViewTranslationTableViewController.swift */; };
+		99AE9E2A1CE71E1100D9F4FC /* HeaderTranslationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99AE9E291CE71E1100D9F4FC /* HeaderTranslationTableViewCell.swift */; };
+		99AE9E2C1CE71E3E00D9F4FC /* AnswerTranslaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99AE9E2B1CE71E3E00D9F4FC /* AnswerTranslaTableViewCell.swift */; };
+		99AE9E2E1CE71E7500D9F4FC /* PostAnswerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99AE9E2D1CE71E7500D9F4FC /* PostAnswerTableViewCell.swift */; };
+		99AE9E311CE7278A00D9F4FC /* PaddingTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99AE9E301CE7278A00D9F4FC /* PaddingTextField.swift */; };
+		99AE9E351CE72E1400D9F4FC /* PaddingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99AE9E341CE72E1400D9F4FC /* PaddingLabel.swift */; };
+		99AE9E371CE7346400D9F4FC /* RoundImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99AE9E361CE7346400D9F4FC /* RoundImageView.swift */; };
+		99AE9E391CE7355500D9F4FC /* RoundWhiteBorderImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99AE9E381CE7355500D9F4FC /* RoundWhiteBorderImageView.swift */; };
+		99AE9E3B1CE7378100D9F4FC /* CreateTranslationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99AE9E3A1CE7378000D9F4FC /* CreateTranslationViewController.swift */; };
 		CB2F83A81CD352A400A882E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2F83A71CD352A400A882E6 /* AppDelegate.swift */; };
 		CB2F83AF1CD352A400A882E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB2F83AD1CD352A400A882E6 /* Main.storyboard */; };
 		CB2F83B11CD352A400A882E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB2F83B01CD352A400A882E6 /* Assets.xcassets */; };
@@ -22,6 +31,8 @@
 		CB456EC71CDC827D0021EF8A /* FeedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB456EC61CDC827D0021EF8A /* FeedTableViewController.swift */; };
 		CB456EC91CDC82AA0021EF8A /* MyTopicTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB456EC81CDC82AA0021EF8A /* MyTopicTableViewController.swift */; };
 		CB456ED11CDC84C80021EF8A /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB456ED01CDC84C80021EF8A /* TabBarController.swift */; };
+		E3921BBDAAF3F1550BDAB262 /* Pods_JibjibUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 776CBC946E70988E6174427C /* Pods_JibjibUITests.framework */; };
+		F17C4C2E7AECBA1D382FB12B /* Pods_Jibjib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEA20A1C1953CF40ADD85224 /* Pods_Jibjib.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,11 +53,25 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		38071E747BE6D3A331AF0081 /* Pods-JibjibUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JibjibUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-JibjibUITests/Pods-JibjibUITests.release.xcconfig"; sourceTree = "<group>"; };
+		776CBC946E70988E6174427C /* Pods_JibjibUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JibjibUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		97340F6C147D66C0A66CE74A /* Pods-JibjibTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JibjibTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JibjibTests/Pods-JibjibTests.debug.xcconfig"; sourceTree = "<group>"; };
 		99AE9E191CE463F300D9F4FC /* ProfileTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileTableViewController.swift; path = ../ProfileTableViewController.swift; sourceTree = "<group>"; };
 		99AE9E1B1CE4729E00D9F4FC /* TestStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TestStoryboard.storyboard; sourceTree = "<group>"; };
 		99AE9E1D1CE654AF00D9F4FC /* HeaderProfileTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HeaderProfileTableViewCell.swift; path = ../HeaderProfileTableViewCell.swift; sourceTree = "<group>"; };
 		99AE9E201CE65BD600D9F4FC /* CommentProfileTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CommentProfileTableViewCell.swift; path = ../CommentProfileTableViewCell.swift; sourceTree = "<group>"; };
 		99AE9E241CE718AF00D9F4FC /* ViewTranslationTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewTranslationTableViewController.swift; path = ../ViewTranslationTableViewController.swift; sourceTree = "<group>"; };
+		99AE9E291CE71E1100D9F4FC /* HeaderTranslationTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderTranslationTableViewCell.swift; sourceTree = "<group>"; };
+		99AE9E2B1CE71E3E00D9F4FC /* AnswerTranslaTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnswerTranslaTableViewCell.swift; sourceTree = "<group>"; };
+		99AE9E2D1CE71E7500D9F4FC /* PostAnswerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PostAnswerTableViewCell.swift; path = ../PostAnswerTableViewCell.swift; sourceTree = "<group>"; };
+		99AE9E301CE7278A00D9F4FC /* PaddingTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaddingTextField.swift; sourceTree = "<group>"; };
+		99AE9E341CE72E1400D9F4FC /* PaddingLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaddingLabel.swift; sourceTree = "<group>"; };
+		99AE9E361CE7346400D9F4FC /* RoundImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundImageView.swift; sourceTree = "<group>"; };
+		99AE9E381CE7355500D9F4FC /* RoundWhiteBorderImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundWhiteBorderImageView.swift; sourceTree = "<group>"; };
+		99AE9E3A1CE7378000D9F4FC /* CreateTranslationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateTranslationViewController.swift; sourceTree = "<group>"; };
+		AB3DC1B9A482A680A19648C4 /* Pods-JibjibUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JibjibUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JibjibUITests/Pods-JibjibUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		B2478102FAC52708F6503251 /* Pods_JibjibTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JibjibTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6EF8960ECC6489718665DDC /* Pods-JibjibTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JibjibTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-JibjibTests/Pods-JibjibTests.release.xcconfig"; sourceTree = "<group>"; };
 		CB2F83A41CD352A400A882E6 /* Jibjib.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Jibjib.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB2F83A71CD352A400A882E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CB2F83AE1CD352A400A882E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -63,6 +88,9 @@
 		CB456EC61CDC827D0021EF8A /* FeedTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedTableViewController.swift; sourceTree = "<group>"; };
 		CB456EC81CDC82AA0021EF8A /* MyTopicTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTopicTableViewController.swift; sourceTree = "<group>"; };
 		CB456ED01CDC84C80021EF8A /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		CEA20A1C1953CF40ADD85224 /* Pods_Jibjib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Jibjib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D652113C993958EA117E5726 /* Pods-Jibjib.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Jibjib.release.xcconfig"; path = "Pods/Target Support Files/Pods-Jibjib/Pods-Jibjib.release.xcconfig"; sourceTree = "<group>"; };
+		DC5867D0874E1438168EA121 /* Pods-Jibjib.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Jibjib.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Jibjib/Pods-Jibjib.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F17C4C2E7AECBA1D382FB12B /* Pods_Jibjib.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18F0AEDA8CC12F5CEF440AE8 /* Pods_JibjibTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,15 +114,42 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3921BBDAAF3F1550BDAB262 /* Pods_JibjibUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		11A421D3CAC062531C4374C7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DC5867D0874E1438168EA121 /* Pods-Jibjib.debug.xcconfig */,
+				D652113C993958EA117E5726 /* Pods-Jibjib.release.xcconfig */,
+				97340F6C147D66C0A66CE74A /* Pods-JibjibTests.debug.xcconfig */,
+				B6EF8960ECC6489718665DDC /* Pods-JibjibTests.release.xcconfig */,
+				AB3DC1B9A482A680A19648C4 /* Pods-JibjibUITests.debug.xcconfig */,
+				38071E747BE6D3A331AF0081 /* Pods-JibjibUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		32F440E53E0FAB7D9E26DE81 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CEA20A1C1953CF40ADD85224 /* Pods_Jibjib.framework */,
+				B2478102FAC52708F6503251 /* Pods_JibjibTests.framework */,
+				776CBC946E70988E6174427C /* Pods_JibjibUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		99AE9E1F1CE65B9700D9F4FC /* TableViewCell */ = {
 			isa = PBXGroup;
 			children = (
+				99AE9E2D1CE71E7500D9F4FC /* PostAnswerTableViewCell.swift */,
+				99AE9E291CE71E1100D9F4FC /* HeaderTranslationTableViewCell.swift */,
+				99AE9E2B1CE71E3E00D9F4FC /* AnswerTranslaTableViewCell.swift */,
 				99AE9E201CE65BD600D9F4FC /* CommentProfileTableViewCell.swift */,
 				99AE9E1D1CE654AF00D9F4FC /* HeaderProfileTableViewCell.swift */,
 			);
@@ -108,6 +165,7 @@
 				CB456EBA1CDC80A20021EF8A /* LoginViewController.swift */,
 				CB456EC61CDC827D0021EF8A /* FeedTableViewController.swift */,
 				CB456EC81CDC82AA0021EF8A /* MyTopicTableViewController.swift */,
+				99AE9E3A1CE7378000D9F4FC /* CreateTranslationViewController.swift */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -121,6 +179,17 @@
 			name = Storyboard;
 			sourceTree = "<group>";
 		};
+		99AE9E2F1CE7275000D9F4FC /* UITemplate */ = {
+			isa = PBXGroup;
+			children = (
+				99AE9E301CE7278A00D9F4FC /* PaddingTextField.swift */,
+				99AE9E361CE7346400D9F4FC /* RoundImageView.swift */,
+				99AE9E341CE72E1400D9F4FC /* PaddingLabel.swift */,
+				99AE9E381CE7355500D9F4FC /* RoundWhiteBorderImageView.swift */,
+			);
+			name = UITemplate;
+			sourceTree = "<group>";
+		};
 		CB2F839B1CD352A400A882E6 = {
 			isa = PBXGroup;
 			children = (
@@ -128,6 +197,8 @@
 				CB2F83BD1CD352A400A882E6 /* JibjibTests */,
 				CB2F83C81CD352A400A882E6 /* JibjibUITests */,
 				CB2F83A51CD352A400A882E6 /* Products */,
+				11A421D3CAC062531C4374C7 /* Pods */,
+				32F440E53E0FAB7D9E26DE81 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -144,6 +215,7 @@
 		CB2F83A61CD352A400A882E6 /* Jibjib */ = {
 			isa = PBXGroup;
 			children = (
+				99AE9E2F1CE7275000D9F4FC /* UITemplate */,
 				99AE9E281CE71A3200D9F4FC /* Storyboard */,
 				99AE9E261CE7190B00D9F4FC /* ViewController */,
 				99AE9E1F1CE65B9700D9F4FC /* TableViewCell */,
@@ -180,9 +252,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CB2F83CE1CD352A400A882E6 /* Build configuration list for PBXNativeTarget "Jibjib" */;
 			buildPhases = (
+				6DA860BFCFCBF3E14D462856 /* 📦 Check Pods Manifest.lock */,
 				CB2F83A01CD352A400A882E6 /* Sources */,
 				CB2F83A11CD352A400A882E6 /* Frameworks */,
 				CB2F83A21CD352A400A882E6 /* Resources */,
+				5960B8ABBB239B52FE1705C0 /* 📦 Embed Pods Frameworks */,
+				B0DDFA234D0B4170E7B555A3 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -197,9 +272,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CB2F83D11CD352A400A882E6 /* Build configuration list for PBXNativeTarget "JibjibTests" */;
 			buildPhases = (
+				CA401C8CBAEDBB69117CD253 /* 📦 Check Pods Manifest.lock */,
 				CB2F83B61CD352A400A882E6 /* Sources */,
 				CB2F83B71CD352A400A882E6 /* Frameworks */,
 				CB2F83B81CD352A400A882E6 /* Resources */,
+				D1A2DD28221B20501CA86611 /* 📦 Embed Pods Frameworks */,
+				80BF7731FA62D6DBD4F87CB5 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -215,9 +293,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CB2F83D41CD352A400A882E6 /* Build configuration list for PBXNativeTarget "JibjibUITests" */;
 			buildPhases = (
+				5756C2546C33F182AEED4194 /* 📦 Check Pods Manifest.lock */,
 				CB2F83C11CD352A400A882E6 /* Sources */,
 				CB2F83C21CD352A400A882E6 /* Frameworks */,
 				CB2F83C31CD352A400A882E6 /* Resources */,
+				BB3DDEBB2FCD246E3A6B393C /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -300,20 +380,151 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5756C2546C33F182AEED4194 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5960B8ABBB239B52FE1705C0 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Jibjib/Pods-Jibjib-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6DA860BFCFCBF3E14D462856 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		80BF7731FA62D6DBD4F87CB5 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JibjibTests/Pods-JibjibTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B0DDFA234D0B4170E7B555A3 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Jibjib/Pods-Jibjib-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BB3DDEBB2FCD246E3A6B393C /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JibjibUITests/Pods-JibjibUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CA401C8CBAEDBB69117CD253 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D1A2DD28221B20501CA86611 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JibjibTests/Pods-JibjibTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CB2F83A01CD352A400A882E6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				99AE9E1E1CE654AF00D9F4FC /* HeaderProfileTableViewCell.swift in Sources */,
+				99AE9E311CE7278A00D9F4FC /* PaddingTextField.swift in Sources */,
+				99AE9E2E1CE71E7500D9F4FC /* PostAnswerTableViewCell.swift in Sources */,
 				99AE9E251CE718AF00D9F4FC /* ViewTranslationTableViewController.swift in Sources */,
+				99AE9E2A1CE71E1100D9F4FC /* HeaderTranslationTableViewCell.swift in Sources */,
+				99AE9E371CE7346400D9F4FC /* RoundImageView.swift in Sources */,
+				99AE9E2C1CE71E3E00D9F4FC /* AnswerTranslaTableViewCell.swift in Sources */,
 				CB456EBB1CDC80A20021EF8A /* LoginViewController.swift in Sources */,
 				CB2F83A81CD352A400A882E6 /* AppDelegate.swift in Sources */,
+				99AE9E351CE72E1400D9F4FC /* PaddingLabel.swift in Sources */,
 				CB456ED11CDC84C80021EF8A /* TabBarController.swift in Sources */,
 				CB456EC91CDC82AA0021EF8A /* MyTopicTableViewController.swift in Sources */,
 				99AE9E1A1CE463F300D9F4FC /* ProfileTableViewController.swift in Sources */,
 				CB456EC71CDC827D0021EF8A /* FeedTableViewController.swift in Sources */,
 				99AE9E211CE65BD600D9F4FC /* CommentProfileTableViewCell.swift in Sources */,
+				99AE9E3B1CE7378100D9F4FC /* CreateTranslationViewController.swift in Sources */,
+				99AE9E391CE7355500D9F4FC /* RoundWhiteBorderImageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -451,6 +662,7 @@
 		};
 		CB2F83CF1CD352A400A882E6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC5867D0874E1438168EA121 /* Pods-Jibjib.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Jibjib/Info.plist;
@@ -462,6 +674,7 @@
 		};
 		CB2F83D01CD352A400A882E6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D652113C993958EA117E5726 /* Pods-Jibjib.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Jibjib/Info.plist;
@@ -473,6 +686,7 @@
 		};
 		CB2F83D21CD352A400A882E6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 97340F6C147D66C0A66CE74A /* Pods-JibjibTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = JibjibTests/Info.plist;
@@ -485,6 +699,7 @@
 		};
 		CB2F83D31CD352A400A882E6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B6EF8960ECC6489718665DDC /* Pods-JibjibTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = JibjibTests/Info.plist;
@@ -497,6 +712,7 @@
 		};
 		CB2F83D51CD352A400A882E6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB3DC1B9A482A680A19648C4 /* Pods-JibjibUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = JibjibUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -509,6 +725,7 @@
 		};
 		CB2F83D61CD352A400A882E6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 38071E747BE6D3A331AF0081 /* Pods-JibjibUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = JibjibUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";

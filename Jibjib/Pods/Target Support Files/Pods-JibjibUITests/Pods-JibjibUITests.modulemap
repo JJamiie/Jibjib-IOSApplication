@@ -1,0 +1,6 @@
+framework module Pods_JibjibUITests {
+  umbrella header "Pods-JibjibUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
