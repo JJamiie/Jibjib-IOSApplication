@@ -30,6 +30,7 @@ class MyTopicTableViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+
         let cell :MyTopicTranslationTableViewCell = tableView.dequeueReusableCellWithIdentifier("cell_question",forIndexPath: indexPath) as! MyTopicTranslationTableViewCell
         cell.lab_title.text = questions[indexPath.row].title
         
@@ -60,8 +61,19 @@ class MyTopicTableViewController: UITableViewController {
         cell.lab_content.text = questions[indexPath.row].content
         cell.lab_time.text = questions[indexPath.row].created_at
         cell.lab_name.text = questions[indexPath.row].owner
+
         
         return cell
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "cell_question"{
+            if let destination : ViewTranslationTableViewController = segue.destinationViewController as? ViewTranslationTableViewController{
+                if let indexpath = tableView.indexPathForSelectedRow{
+                    destination.id_question = questions[indexpath.row].id
+                }
+            }
+        }
     }
     
     func setToken(){

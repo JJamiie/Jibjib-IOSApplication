@@ -16,6 +16,7 @@ class FeedTableViewController: UITableViewController {
     var token : String!
     var dict :NSDictionary!
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.header.frame =  CGRectMake(0 , 0, self.view.frame.width, 60)
@@ -100,4 +101,13 @@ class FeedTableViewController: UITableViewController {
                 }
         }
     }
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "cell_question"{
+            if let destination : ViewTranslationTableViewController = segue.destinationViewController as? ViewTranslationTableViewController{
+                let indexpath = tableView.indexPathForSelectedRow
+                destination.id_question = questions[indexpath!.row].id
+            }
+        }
+    }
+    
 }
