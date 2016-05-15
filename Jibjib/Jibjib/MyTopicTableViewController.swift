@@ -42,7 +42,7 @@ class MyTopicTableViewController: UITableViewController {
     
     func getMyTopic(){
         let headers = [
-            "Authorization": self.token as! String,
+            "Authorization": self.token as String,
             "Accept": "application/json"
         ]
         

@@ -12,6 +12,8 @@ import Alamofire
 class ProfileTableViewController: UITableViewController {
     
     var token : String!
+    var profile = [Profile]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setToken()
@@ -63,7 +65,7 @@ class ProfileTableViewController: UITableViewController {
     
     func getMyProfile(){
         let headers = [
-            "Authorization": self.token as! String,
+            "Authorization": self.token as String,
             "Accept": "application/json"
         ]
         
