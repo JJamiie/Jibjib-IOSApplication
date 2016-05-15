@@ -12,7 +12,6 @@ class TabBarController: UITabBarController {
     var token : String!
     override func viewDidLoad() {
         super.viewDidLoad()
-   
     }
     
 }

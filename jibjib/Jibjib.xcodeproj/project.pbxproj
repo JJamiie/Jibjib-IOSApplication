@@ -22,6 +22,7 @@
 		99AE9E391CE7355500D9F4FC /* RoundWhiteBorderImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99AE9E381CE7355500D9F4FC /* RoundWhiteBorderImageView.swift */; };
 		99AE9E3B1CE7378100D9F4FC /* CreateTranslationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99AE9E3A1CE7378000D9F4FC /* CreateTranslationViewController.swift */; };
 		99F0934B1CE83F8400EED0D7 /* BorderBottomUITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F0934A1CE83F8400EED0D7 /* BorderBottomUITextField.swift */; };
+		99F0934D1CE8526200EED0D7 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F0934C1CE8526100EED0D7 /* Question.swift */; };
 		CB2F83A81CD352A400A882E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2F83A71CD352A400A882E6 /* AppDelegate.swift */; };
 		CB2F83AF1CD352A400A882E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB2F83AD1CD352A400A882E6 /* Main.storyboard */; };
 		CB2F83B11CD352A400A882E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB2F83B01CD352A400A882E6 /* Assets.xcassets */; };
@@ -72,6 +73,7 @@
 		99AE9E3A1CE7378000D9F4FC /* CreateTranslationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateTranslationViewController.swift; sourceTree = "<group>"; };
 		99F093481CE75BD300EED0D7 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "Pods/../build/Debug-iphoneos/Alamofire/Alamofire.framework"; sourceTree = "<group>"; };
 		99F0934A1CE83F8400EED0D7 /* BorderBottomUITextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BorderBottomUITextField.swift; sourceTree = "<group>"; };
+		99F0934C1CE8526100EED0D7 /* Question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		AB3DC1B9A482A680A19648C4 /* Pods-JibjibUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JibjibUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JibjibUITests/Pods-JibjibUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		B2478102FAC52708F6503251 /* Pods_JibjibTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JibjibTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6EF8960ECC6489718665DDC /* Pods-JibjibTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JibjibTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-JibjibTests/Pods-JibjibTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -163,12 +165,12 @@
 		99AE9E261CE7190B00D9F4FC /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				99AE9E241CE718AF00D9F4FC /* ViewTranslationTableViewController.swift */,
-				99AE9E191CE463F300D9F4FC /* ProfileTableViewController.swift */,
-				CB456ED01CDC84C80021EF8A /* TabBarController.swift */,
 				CB456EBA1CDC80A20021EF8A /* LoginViewController.swift */,
+				CB456ED01CDC84C80021EF8A /* TabBarController.swift */,
 				CB456EC61CDC827D0021EF8A /* FeedTableViewController.swift */,
 				CB456EC81CDC82AA0021EF8A /* MyTopicTableViewController.swift */,
+				99AE9E191CE463F300D9F4FC /* ProfileTableViewController.swift */,
+				99AE9E241CE718AF00D9F4FC /* ViewTranslationTableViewController.swift */,
 				99AE9E3A1CE7378000D9F4FC /* CreateTranslationViewController.swift */,
 			);
 			name = ViewController;
@@ -193,6 +195,14 @@
 				99F0934A1CE83F8400EED0D7 /* BorderBottomUITextField.swift */,
 			);
 			name = UITemplate;
+			sourceTree = "<group>";
+		};
+		99F0934E1CE85E6400EED0D7 /* Struct */ = {
+			isa = PBXGroup;
+			children = (
+				99F0934C1CE8526100EED0D7 /* Question.swift */,
+			);
+			name = Struct;
 			sourceTree = "<group>";
 		};
 		CB2F839B1CD352A400A882E6 = {
@@ -220,6 +230,7 @@
 		CB2F83A61CD352A400A882E6 /* Jibjib */ = {
 			isa = PBXGroup;
 			children = (
+				99F0934E1CE85E6400EED0D7 /* Struct */,
 				99AE9E2F1CE7275000D9F4FC /* UITemplate */,
 				99AE9E281CE71A3200D9F4FC /* Storyboard */,
 				99AE9E261CE7190B00D9F4FC /* ViewController */,
@@ -526,6 +537,7 @@
 				CB456ED11CDC84C80021EF8A /* TabBarController.swift in Sources */,
 				CB456EC91CDC82AA0021EF8A /* MyTopicTableViewController.swift in Sources */,
 				99F0934B1CE83F8400EED0D7 /* BorderBottomUITextField.swift in Sources */,
+				99F0934D1CE8526200EED0D7 /* Question.swift in Sources */,
 				99AE9E1A1CE463F300D9F4FC /* ProfileTableViewController.swift in Sources */,
 				CB456EC71CDC827D0021EF8A /* FeedTableViewController.swift in Sources */,
 				99AE9E211CE65BD600D9F4FC /* CommentProfileTableViewCell.swift in Sources */,

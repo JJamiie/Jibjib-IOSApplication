@@ -9,10 +9,10 @@
 import UIKit
 
 class MyTopicTableViewController: UITableViewController {
-    
+    var token : String!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        setToken()
     }
     
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
@@ -27,4 +27,11 @@ class MyTopicTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCellWithIdentifier("cell_question",forIndexPath: indexPath)
         return cell
     }
+    
+    func setToken(){
+        if let tbc : TabBarController = self.tabBarController as? TabBarController{
+            self.token = tbc.token
+        }
+    }
+    
 }

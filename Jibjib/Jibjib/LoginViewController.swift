@@ -50,14 +50,19 @@ class LoginViewController: UIViewController,UITextFieldDelegate {
                     let tk = json.valueForKey("token")
                     if tk != nil{
                         self.token = "Token " + (tk as! String)
-                        print(self.token)
-                        let dict = ["token" : self.token]
-                        NSNotificationCenter.defaultCenter().postNotificationName("NotificationIdentifier", object: nil,userInfo: dict)
                         self.performSegueWithIdentifier("sign_in", sender: self)
                     }
                 } catch {
                     print(error)
                 }
+        }
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "sign_in"{
+            if let destination : TabBarController = segue.destinationViewController as? TabBarController{
+                destination.token = self.token
+            }
         }
     }
     
