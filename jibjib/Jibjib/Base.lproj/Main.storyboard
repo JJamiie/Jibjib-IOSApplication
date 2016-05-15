@@ -478,7 +478,7 @@
                             </variation>
                         </view>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell_question" rowHeight="188" id="hEb-Ms-rNX">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell_question" rowHeight="188" id="hEb-Ms-rNX" customClass="QuestionTranslationTableViewCell" customModule="Jibjib" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="220" width="600" height="188"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hEb-Ms-rNX" id="elF-Qf-MjC">
@@ -785,12 +785,6 @@
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="JJamie" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F9Z-8Z-PXg">
-                                            <rect key="frame" x="-42" y="-21" width="42" height="21"/>
-                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
-                                            <color key="textColor" red="0.2627450980392157" green="0.72549019607843135" blue="0.92941176470588238" alpha="1" colorSpace="calibratedRGB"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 min" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IhO-QX-IO3">
                                             <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -802,6 +796,12 @@
                                             <string key="text">asdfasfasfasfasfasfasfasfasafasfasfasfsadfasasdfasfasfasfasfasfasfasfasafasfasfasfsadfasasdfasfasfasfasfasfasfasfasafasfasfasfsadfas</string>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="JJamie" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F9Z-8Z-PXg">
+                                            <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                            <color key="textColor" red="0.2627450980392157" green="0.72549019607843135" blue="0.92941176470588238" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
@@ -839,9 +839,9 @@
                                         <mask key="subviews">
                                             <exclude reference="bgt-Xa-nT8"/>
                                             <exclude reference="4l9-cq-pza"/>
-                                            <exclude reference="F9Z-8Z-PXg"/>
                                             <exclude reference="IhO-QX-IO3"/>
                                             <exclude reference="XTC-HH-UCc"/>
+                                            <exclude reference="F9Z-8Z-PXg"/>
                                         </mask>
                                         <mask key="constraints">
                                             <exclude reference="5ZZ-BL-LmP"/>
@@ -868,9 +868,9 @@
                                         <mask key="subviews">
                                             <include reference="bgt-Xa-nT8"/>
                                             <include reference="4l9-cq-pza"/>
-                                            <include reference="F9Z-8Z-PXg"/>
                                             <include reference="IhO-QX-IO3"/>
                                             <include reference="XTC-HH-UCc"/>
+                                            <include reference="F9Z-8Z-PXg"/>
                                         </mask>
                                         <mask key="constraints">
                                             <include reference="5ZZ-BL-LmP"/>
@@ -895,6 +895,15 @@
                                     </variation>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="lab_content" destination="XTC-HH-UCc" id="fz6-ok-79Z"/>
+                                    <outlet property="lab_from_language" destination="nXv-AR-AuT" id="yfP-FC-6XH"/>
+                                    <outlet property="lab_name" destination="F9Z-8Z-PXg" id="LWw-T9-Glg"/>
+                                    <outlet property="lab_number_of_question" destination="WJU-3a-Bkc" id="dAw-B4-yxb"/>
+                                    <outlet property="lab_number_of_view" destination="g3D-hB-dna" id="dr9-IS-z0s"/>
+                                    <outlet property="lab_number_of_vote" destination="oPN-kd-Xs7" id="fNc-Yf-CVx"/>
+                                    <outlet property="lab_time" destination="IhO-QX-IO3" id="8bm-s7-lK0"/>
+                                    <outlet property="lab_title" destination="4l9-cq-pza" id="iaG-fM-ren"/>
+                                    <outlet property="lab_to_language" destination="XoV-XI-uwe" id="zqk-dh-hN9"/>
                                     <segue destination="ric-gM-goK" kind="show" id="iId-YZ-gEw"/>
                                 </connections>
                             </tableViewCell>
@@ -923,7 +932,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell_question" rowHeight="188" id="9ev-Et-3M7">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell_question" rowHeight="188" id="9ev-Et-3M7" customClass="MyTopicTranslationTableViewCell" customModule="Jibjib" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="92" width="600" height="188"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9ev-Et-3M7" id="wme-Wv-WuM">
@@ -1340,6 +1349,15 @@
                                     </variation>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="lab_content" destination="efs-oa-SkU" id="fbI-TC-PvS"/>
+                                    <outlet property="lab_from_language" destination="Mg6-69-mhj" id="Wja-91-xMT"/>
+                                    <outlet property="lab_name" destination="XO0-Ca-KdT" id="SG5-5K-XuE"/>
+                                    <outlet property="lab_number_of_answer" destination="fqn-yV-82M" id="w2v-SV-Fjd"/>
+                                    <outlet property="lab_number_of_view" destination="Qwh-sk-XOT" id="cfh-GL-tjF"/>
+                                    <outlet property="lab_number_of_vote" destination="WXc-Q2-l2Q" id="Q1W-Zf-tZp"/>
+                                    <outlet property="lab_time" destination="AR9-BF-VhD" id="3Kp-ku-7Ts"/>
+                                    <outlet property="lab_title" destination="i8g-CW-Ac4" id="COC-2w-Snm"/>
+                                    <outlet property="lab_to_language" destination="R0l-xa-Al9" id="2I3-VJ-FqA"/>
                                     <segue destination="ric-gM-goK" kind="show" id="Wsg-KC-BBq"/>
                                 </connections>
                             </tableViewCell>
