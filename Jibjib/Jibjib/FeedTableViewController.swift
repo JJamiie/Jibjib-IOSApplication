@@ -32,7 +32,8 @@ class FeedTableViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("cell_question",forIndexPath: indexPath)
+        let cell : QuestionTranslationTableViewCell = tableView.dequeueReusableCellWithIdentifier("cell_question",forIndexPath: indexPath) as! QuestionTranslationTableViewCell
+    
     
         return cell
     }
