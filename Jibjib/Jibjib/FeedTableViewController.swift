@@ -11,12 +11,17 @@ import UIKit
 class FeedTableViewController: UITableViewController {
 
     @IBOutlet weak var header: UIView!
-    
+    var token : String!
     override func viewDidLoad() {
         super.viewDidLoad()
         self.header.frame =  CGRectMake(0 , 0, self.view.frame.width, 60)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(FeedTableViewController.getToken(_:)), name:"NotificationIdentifier", object: nil)
     }
     
+    func getToken(notification:NSNotification){
+        self.token = notification.userInfo!["token"]! as! String
+        print(self.token)
+    }
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
     }

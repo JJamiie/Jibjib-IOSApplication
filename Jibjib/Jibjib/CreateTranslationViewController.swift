@@ -8,45 +8,52 @@
 
 import UIKit
 
-class CreateTranslationViewController: UIViewController {
-
+class CreateTranslationViewController: UIViewController,UIAlertViewDelegate {
     
-  
-    @IBOutlet weak var btn_to_language: UIButton!
+    var itemLanguageFrom = ["Thai","English","Chinese"]
+    var itemLanguageTo = ["English","Thai","Chinese"]
+    
     @IBOutlet weak var edt_translation_title: PaddingTextField!
     @IBOutlet weak var edt_content: PaddingTextField!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
     @IBAction func btn_from_language(sender: AnyObject) {
-        let alertController = UIAlertController(title: "Default Style", message: "A standard alert.", preferredStyle: .Alert)
+        showAlert(itemLanguageFrom)
+    }
+    
+    @IBAction func btn_to_language(sender: AnyObject) {
+        showAlert(itemLanguageTo)
+        
+    }
+    
+    func showAlert(item:Array<String>){
+        let alertController = UIAlertController(title: "Choose language", message: nil, preferredStyle: .Alert)
+        
+        for (index , element) in item.enumerate() {
+            let action = UIAlertAction(title: element, style: .Default) { (action) in
+                
+            }
+            alertController.addAction(action)
+            
+        }
         
         let cancelAction = UIAlertAction(title: "Cancel", style: .Cancel) { (action) in
             // ...
         }
+        
         alertController.addAction(cancelAction)
-        
-        let OKAction = UIAlertAction(title: "OK", style: .Default) { (action) in
-            // ...
-        }
-        alertController.addAction(OKAction)
-        
         self.presentViewController(alertController, animated: true) {
-            // ...
         }
-        
-    }
-    @IBAction func btn_to_language(sender: AnyObject) {
-        
     }
     
-
+    
 }

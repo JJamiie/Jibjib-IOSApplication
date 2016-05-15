@@ -64,32 +64,9 @@
                                     </mask>
                                 </variation>
                                 <connections>
-                                    <segue destination="49e-Tb-3d3" kind="show" id="Ig7-ZS-gNo"/>
+                                    <action selector="btn_login:" destination="NGB-U2-ht0" eventType="touchUpInside" id="TOb-Vl-Cgo"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="username" textAlignment="natural" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="qiT-y3-uGO">
-                                <rect key="frame" x="136" y="131" width="329" height="30"/>
-                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <accessibility key="accessibilityConfiguration" hint="username"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="XKg-T5-ap1">
-                                        <variation key="widthClass=compact" constant="35"/>
-                                    </constraint>
-                                </constraints>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="XKg-T5-ap1"/>
-                                    </mask>
-                                </variation>
-                                <variation key="widthClass=compact">
-                                    <mask key="constraints">
-                                        <include reference="XKg-T5-ap1"/>
-                                    </mask>
-                                </variation>
-                            </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="J4y-Ax-xSZ">
                                 <rect key="frame" x="136" y="197" width="329" height="30"/>
                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -134,6 +111,29 @@
                                     </mask>
                                 </variation>
                             </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="username" textAlignment="natural" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="qiT-y3-uGO">
+                                <rect key="frame" x="136" y="131" width="329" height="30"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <accessibility key="accessibilityConfiguration" hint="username"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="XKg-T5-ap1">
+                                        <variation key="widthClass=compact" constant="35"/>
+                                    </constraint>
+                                </constraints>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="XKg-T5-ap1"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="XKg-T5-ap1"/>
+                                    </mask>
+                                </variation>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="0.011764705882352941" green="0.78431372549019607" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -257,6 +257,7 @@
                         <outlet property="btn_sign_in" destination="lsz-CG-lSr" id="RF0-Qe-H3F"/>
                         <outlet property="edt_password" destination="J4y-Ax-xSZ" id="5UD-Rx-XHE"/>
                         <outlet property="edt_username" destination="qiT-y3-uGO" id="ckj-5B-pOk"/>
+                        <segue destination="49e-Tb-3d3" kind="modal" identifier="sign_in" modalTransitionStyle="crossDissolve" id="JON-6U-8t9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4qi-HW-ztF" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1382,7 +1383,7 @@
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="English" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zBI-rT-EB7">
                                                     <rect key="frame" x="-42" y="-21" width="42" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -1476,7 +1477,7 @@
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thai" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XXS-1N-WbA">
                                                     <rect key="frame" x="-42" y="-21" width="42" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -1535,11 +1536,11 @@
                                             <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                             <color key="backgroundColor" red="0.011764705882352941" green="0.78431372549019607" blue="0.95686274509803915" alpha="0.044769503546099293" colorSpace="calibratedRGB"/>
                                             <string key="text">LabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabel</string>
-                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.76964206560283688" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                             <variation key="widthClass=compact">
-                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
                                             </variation>
                                         </label>
                                     </subviews>
@@ -1779,7 +1780,7 @@
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your answer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QHN-EK-Law">
                                                     <rect key="frame" x="-42" y="-21" width="42" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                     <variation key="widthClass=compact" fixedFrame="YES">
@@ -1914,7 +1915,7 @@
                                     </mask>
                                 </variation>
                                 <connections>
-                                    <action selector="btn_to_language:" destination="IAd-zB-gah" eventType="touchUpInside" id="jBU-vl-JSw"/>
+                                    <action selector="btn_to_language:" destination="IAd-zB-gah" eventType="touchUpInside" id="Kog-Nl-j38"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e71-3F-qLK">
@@ -1999,6 +2000,9 @@
                                         <include reference="eMH-2s-Nlh"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <action selector="btn_from_language:" destination="IAd-zB-gah" eventType="touchUpInside" id="Tnx-Ze-Fd8"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.97856996584477274" green="0.99368046465968585" blue="0.98234759054850096" alpha="1" colorSpace="calibratedRGB"/>
@@ -2088,7 +2092,6 @@
                         </variation>
                     </view>
                     <connections>
-                        <outlet property="btn_to_language" destination="ltA-02-MGu" id="RJ7-QA-oOh"/>
                         <outlet property="edt_content" destination="1oQ-9g-HmC" id="FFb-EZ-hfD"/>
                         <outlet property="edt_translation_title" destination="K7Z-f6-OhS" id="av1-py-beS"/>
                     </connections>

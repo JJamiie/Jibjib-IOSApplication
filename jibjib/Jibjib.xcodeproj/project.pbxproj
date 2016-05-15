@@ -69,6 +69,7 @@
 		99AE9E361CE7346400D9F4FC /* RoundImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundImageView.swift; sourceTree = "<group>"; };
 		99AE9E381CE7355500D9F4FC /* RoundWhiteBorderImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundWhiteBorderImageView.swift; sourceTree = "<group>"; };
 		99AE9E3A1CE7378000D9F4FC /* CreateTranslationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateTranslationViewController.swift; sourceTree = "<group>"; };
+		99F093481CE75BD300EED0D7 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "Pods/../build/Debug-iphoneos/Alamofire/Alamofire.framework"; sourceTree = "<group>"; };
 		AB3DC1B9A482A680A19648C4 /* Pods-JibjibUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JibjibUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JibjibUITests/Pods-JibjibUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		B2478102FAC52708F6503251 /* Pods_JibjibTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JibjibTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6EF8960ECC6489718665DDC /* Pods-JibjibTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JibjibTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-JibjibTests/Pods-JibjibTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -137,6 +138,7 @@
 		32F440E53E0FAB7D9E26DE81 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				99F093481CE75BD300EED0D7 /* Alamofire.framework */,
 				CEA20A1C1953CF40ADD85224 /* Pods_Jibjib.framework */,
 				B2478102FAC52708F6503251 /* Pods_JibjibTests.framework */,
 				776CBC946E70988E6174427C /* Pods_JibjibUITests.framework */,
@@ -665,6 +667,10 @@
 			baseConfigurationReference = DC5867D0874E1438168EA121 /* Pods-Jibjib.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/Alamofire",
+				);
 				INFOPLIST_FILE = Jibjib/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = th.ac.chula.Jibjib;
@@ -677,6 +683,10 @@
 			baseConfigurationReference = D652113C993958EA117E5726 /* Pods-Jibjib.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/Alamofire",
+				);
 				INFOPLIST_FILE = Jibjib/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = th.ac.chula.Jibjib;
