@@ -13,6 +13,8 @@ class CreateTranslationViewController: UIViewController,UIAlertViewDelegate {
     var itemLanguageFrom = ["Thai","English","Chinese"]
     var itemLanguageTo = ["English","Thai","Chinese"]
     
+    @IBOutlet weak var outlet_from_language: UIButton!
+    @IBOutlet weak var outlet_to_language: UIButton!
     @IBOutlet weak var edt_translation_title: PaddingTextField!
     @IBOutlet weak var edt_content: PaddingTextField!
     override func viewDidLoad() {
@@ -40,7 +42,6 @@ class CreateTranslationViewController: UIViewController,UIAlertViewDelegate {
         
         for (index , element) in item.enumerate() {
             let action = UIAlertAction(title: element, style: .Default) { (action) in
-                
             }
             alertController.addAction(action)
             

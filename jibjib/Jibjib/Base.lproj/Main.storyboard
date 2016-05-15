@@ -904,7 +904,7 @@
                                     <outlet property="lab_time" destination="IhO-QX-IO3" id="8bm-s7-lK0"/>
                                     <outlet property="lab_title" destination="4l9-cq-pza" id="iaG-fM-ren"/>
                                     <outlet property="lab_to_language" destination="XoV-XI-uwe" id="zqk-dh-hN9"/>
-                                    <segue destination="ric-gM-goK" kind="show" id="iId-YZ-gEw"/>
+                                    <segue destination="ric-gM-goK" kind="show" identifier="cell_question" id="iId-YZ-gEw"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -1233,12 +1233,6 @@
                                                 </mask>
                                             </variation>
                                         </stackView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i8g-CW-Ac4">
-                                            <rect key="frame" x="-42" y="-21" width="42" height="21"/>
-                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="JJamie" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XO0-Ca-KdT">
                                             <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                             <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
@@ -1255,6 +1249,12 @@
                                             <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                             <string key="text">asdfasfasfasfasfasfasfasfasafasfasfasfsadfasasdfasfasfasfasfasfasfasfasafasfasfasfsadfasasdfasfasfasfasfasfasfasfasafasfasfasfsadfas</string>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i8g-CW-Ac4">
+                                            <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -1292,10 +1292,10 @@
                                     <variation key="default">
                                         <mask key="subviews">
                                             <exclude reference="Zx8-cO-375"/>
-                                            <exclude reference="i8g-CW-Ac4"/>
                                             <exclude reference="XO0-Ca-KdT"/>
                                             <exclude reference="AR9-BF-VhD"/>
                                             <exclude reference="efs-oa-SkU"/>
+                                            <exclude reference="i8g-CW-Ac4"/>
                                         </mask>
                                         <mask key="constraints">
                                             <exclude reference="T6D-Qy-LEa"/>
@@ -1321,10 +1321,10 @@
                                     <variation key="widthClass=compact">
                                         <mask key="subviews">
                                             <include reference="Zx8-cO-375"/>
-                                            <include reference="i8g-CW-Ac4"/>
                                             <include reference="XO0-Ca-KdT"/>
                                             <include reference="AR9-BF-VhD"/>
                                             <include reference="efs-oa-SkU"/>
+                                            <include reference="i8g-CW-Ac4"/>
                                         </mask>
                                         <mask key="constraints">
                                             <include reference="T6D-Qy-LEa"/>
@@ -1358,7 +1358,7 @@
                                     <outlet property="lab_time" destination="AR9-BF-VhD" id="3Kp-ku-7Ts"/>
                                     <outlet property="lab_title" destination="i8g-CW-Ac4" id="COC-2w-Snm"/>
                                     <outlet property="lab_to_language" destination="R0l-xa-Al9" id="2I3-VJ-FqA"/>
-                                    <segue destination="ric-gM-goK" kind="show" id="Wsg-KC-BBq"/>
+                                    <segue destination="ric-gM-goK" kind="show" identifier="cell_question" id="Wsg-KC-BBq"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -2112,6 +2112,8 @@
                     <connections>
                         <outlet property="edt_content" destination="1oQ-9g-HmC" id="FFb-EZ-hfD"/>
                         <outlet property="edt_translation_title" destination="K7Z-f6-OhS" id="av1-py-beS"/>
+                        <outlet property="outlet_from_language" destination="MM5-HB-8NN" id="LTc-4E-f6a"/>
+                        <outlet property="outlet_to_language" destination="ltA-02-MGu" id="W8Q-Ro-hZU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5p3-yM-Kuf" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -2693,6 +2695,6 @@
         <image name="pic_arrow" width="64" height="64"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="iId-YZ-gEw"/>
+        <segue reference="Wsg-KC-BBq"/>
     </inferredMetricsTieBreakers>
 </document>
