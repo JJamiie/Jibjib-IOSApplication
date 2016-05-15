@@ -95,7 +95,6 @@ class MyTopicTableViewController: UITableViewController {
                             topic.count_vote = String(self.dict.valueForKey("count_vote") as! NSNumber)
                             topic.created_at = self.dict.valueForKey("created_at") as! String
                             self.questions.append(topic)
-                            print(json)
                         }
                     }
                     self.tableView.reloadData()
