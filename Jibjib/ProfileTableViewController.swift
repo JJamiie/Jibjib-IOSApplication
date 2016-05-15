@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class ProfileTableViewController: UITableViewController {
     
@@ -14,6 +15,7 @@ class ProfileTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setToken()
+        getMyProfile()
     }
     
     override func didReceiveMemoryWarning() {
@@ -26,7 +28,6 @@ class ProfileTableViewController: UITableViewController {
         // #warning Incomplete implementation, return the number of rows
         return 3
     }
-    
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         if indexPath.row == 0{
@@ -60,4 +61,23 @@ class ProfileTableViewController: UITableViewController {
         }
     }
     
+    func getMyProfile(){
+        let headers = [
+            "Authorization": self.token as! String,
+            "Accept": "application/json"
+        ]
+        
+        Alamofire.request(.GET, "http://128.199.141.51:8000/api/userProfiles/own/", headers: headers)
+            .responseJSON { response in
+                var json: NSDictionary!
+                do {
+                    json = try NSJSONSerialization.JSONObjectWithData(response.data!, options: NSJSONReadingOptions()) as? NSDictionary
+                    if(json != nil){
+                        
+                    }
+                } catch {
+                    print(error)
+                }
+        }
+    }
 }
