@@ -22,30 +22,18 @@ class LoginViewController: UIViewController,UITextFieldDelegate {
     
     @IBAction func btn_login(sender: UIButton) {
         sign_in()
-        
-        
+    
     }
     
     
     func setWidget(){
         btn_sign_in.layer.cornerRadius = 6
-        borderButtom(edt_username)
-        borderButtom(edt_password)
         edt_username.attributedPlaceholder = NSAttributedString(string:"username",attributes:[NSForegroundColorAttributeName: UIColor.whiteColor()])
         edt_username.text = "jjamie"
         edt_password.text = "Jamie16130"
         edt_password.attributedPlaceholder = NSAttributedString(string:"password",attributes:[NSForegroundColorAttributeName: UIColor.whiteColor()])
     }
     
-    func borderButtom(textField:UITextField){
-        let border = CALayer()
-        let width = CGFloat(1.0)
-        border.borderColor = UIColor.whiteColor().CGColor
-        border.frame = CGRect(x: 0, y: textField.frame.size.height - width, width:  textField.frame.size.width, height: textField.frame.size.height)
-        border.borderWidth = width
-        textField.layer.addSublayer(border)
-        textField.layer.masksToBounds = true
-    }
     
     func textFieldShouldReturn(textField: UITextField) -> Bool {
         textField.resignFirstResponder()
