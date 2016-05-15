@@ -57,7 +57,6 @@ class FeedTableViewController: UITableViewController {
         
         cell.lab_from_language.text = questions[indexPath.row].from_lang
         cell.lab_to_language.text = questions[indexPath.row].to_lang
-        
         cell.lab_number_of_question.text = questions[indexPath.row].count_ans
         cell.lab_number_of_vote.text = questions[indexPath.row].count_vote
         cell.lab_content.text = questions[indexPath.row].content
