@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="NGB-U2-ht0">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="NGB-U2-ht0">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -482,7 +482,7 @@
                                 <rect key="frame" x="0.0" y="220" width="600" height="188"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hEb-Ms-rNX" id="elF-Qf-MjC">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="187"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="187.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bgt-Xa-nT8">
@@ -782,7 +782,7 @@
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4l9-cq-pza">
                                             <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                             <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 min" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IhO-QX-IO3">
@@ -795,7 +795,7 @@
                                             <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                             <string key="text">asdfasfasfasfasfasfasfasfasafasfasfasfsadfasasdfasfasfasfasfasfasfasfasafasfasfasfsadfasasdfasfasfasfasfasfasfasfasafasfasfasfsadfas</string>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="JJamie" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F9Z-8Z-PXg">
@@ -904,7 +904,7 @@
                                     <outlet property="lab_time" destination="IhO-QX-IO3" id="8bm-s7-lK0"/>
                                     <outlet property="lab_title" destination="4l9-cq-pza" id="iaG-fM-ren"/>
                                     <outlet property="lab_to_language" destination="XoV-XI-uwe" id="zqk-dh-hN9"/>
-                                    <segue destination="ric-gM-goK" kind="show" identifier="cell_question" id="iId-YZ-gEw"/>
+                                    <segue destination="ric-gM-goK" kind="show" id="iId-YZ-gEw"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -936,7 +936,7 @@
                                 <rect key="frame" x="0.0" y="92" width="600" height="188"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9ev-Et-3M7" id="wme-Wv-WuM">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="187"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="187.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zx8-cO-375">
@@ -1233,6 +1233,12 @@
                                                 </mask>
                                             </variation>
                                         </stackView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i8g-CW-Ac4">
+                                            <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="JJamie" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XO0-Ca-KdT">
                                             <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                             <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
@@ -1249,13 +1255,7 @@
                                             <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                             <string key="text">asdfasfasfasfasfasfasfasfasafasfasfasfsadfasasdfasfasfasfasfasfasfasfasafasfasfasfsadfasasdfasfasfasfasfasfasfasfasafasfasfasfsadfas</string>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i8g-CW-Ac4">
-                                            <rect key="frame" x="-42" y="-21" width="42" height="21"/>
-                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
@@ -1292,10 +1292,10 @@
                                     <variation key="default">
                                         <mask key="subviews">
                                             <exclude reference="Zx8-cO-375"/>
+                                            <exclude reference="i8g-CW-Ac4"/>
                                             <exclude reference="XO0-Ca-KdT"/>
                                             <exclude reference="AR9-BF-VhD"/>
                                             <exclude reference="efs-oa-SkU"/>
-                                            <exclude reference="i8g-CW-Ac4"/>
                                         </mask>
                                         <mask key="constraints">
                                             <exclude reference="T6D-Qy-LEa"/>
@@ -1321,10 +1321,10 @@
                                     <variation key="widthClass=compact">
                                         <mask key="subviews">
                                             <include reference="Zx8-cO-375"/>
+                                            <include reference="i8g-CW-Ac4"/>
                                             <include reference="XO0-Ca-KdT"/>
                                             <include reference="AR9-BF-VhD"/>
                                             <include reference="efs-oa-SkU"/>
-                                            <include reference="i8g-CW-Ac4"/>
                                         </mask>
                                         <mask key="constraints">
                                             <include reference="T6D-Qy-LEa"/>
@@ -1358,7 +1358,7 @@
                                     <outlet property="lab_time" destination="AR9-BF-VhD" id="3Kp-ku-7Ts"/>
                                     <outlet property="lab_title" destination="i8g-CW-Ac4" id="COC-2w-Snm"/>
                                     <outlet property="lab_to_language" destination="R0l-xa-Al9" id="2I3-VJ-FqA"/>
-                                    <segue destination="ric-gM-goK" kind="show" identifier="cell_question" id="Wsg-KC-BBq"/>
+                                    <segue destination="ric-gM-goK" kind="show" id="Wsg-KC-BBq"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -1387,7 +1387,7 @@
                                 <rect key="frame" x="0.0" y="92" width="400" height="240"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3EY-Jw-Z7y" id="DPA-1T-D7c">
-                                    <rect key="frame" x="0.0" y="0.0" width="400" height="239"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="400" height="239.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jTK-LT-wTJ">
@@ -1402,7 +1402,7 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="English" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zBI-rT-EB7">
                                                     <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                                     <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -1456,7 +1456,7 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3 answers" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AYH-6k-o5B">
                                                     <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -1496,7 +1496,7 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thai" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XXS-1N-WbA">
                                                     <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                                     <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&gt;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="muo-jS-F2T">
@@ -1641,7 +1641,7 @@
                                 <rect key="frame" x="0.0" y="332" width="400" height="104"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="VAi-3e-1EG" id="0sc-iV-9Y0">
-                                    <rect key="frame" x="0.0" y="0.0" width="400" height="103"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="400" height="103.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default_profile" translatesAutoresizingMaskIntoConstraints="NO" id="NtR-sz-EqZ">
@@ -1692,7 +1692,7 @@
                                             <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                             <string key="text">LabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabelLabel</string>
                                             <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
@@ -1769,7 +1769,7 @@
                                 <rect key="frame" x="0.0" y="436" width="400" height="210"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tR1-xf-Wzy" id="kOs-bu-ilz">
-                                    <rect key="frame" x="0.0" y="0.0" width="400" height="209"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="400" height="209.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kkT-Yi-WLc">
@@ -1799,7 +1799,7 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your answer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QHN-EK-Law">
                                                     <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                                     <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                     <variation key="widthClass=compact" fixedFrame="YES">
                                                         <rect key="frame" x="30" y="10" width="94" height="21"/>
@@ -2112,8 +2112,6 @@
                     <connections>
                         <outlet property="edt_content" destination="1oQ-9g-HmC" id="FFb-EZ-hfD"/>
                         <outlet property="edt_translation_title" destination="K7Z-f6-OhS" id="av1-py-beS"/>
-                        <outlet property="outlet_from_language" destination="MM5-HB-8NN" id="LTc-4E-f6a"/>
-                        <outlet property="outlet_to_language" destination="ltA-02-MGu" id="W8Q-Ro-hZU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5p3-yM-Kuf" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -2181,7 +2179,7 @@
                                 <rect key="frame" x="0.0" y="92" width="600" height="291"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="MXB-eD-Hft" id="LVZ-qI-rvK">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="290"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="290.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="QsH-f3-RPH">
@@ -2378,8 +2376,7 @@
                                                                     <exclude reference="pD3-Bd-uWI"/>
                                                                 </mask>
                                                             </variation>
-                                                            <variation key="widthClass=compact" misplaced="YES">
-                                                                <rect key="frame" x="45" y="0.0" width="100" height="100"/>
+                                                            <variation key="widthClass=compact">
                                                                 <mask key="constraints">
                                                                     <include reference="316-Ig-fsI"/>
                                                                     <include reference="pD3-Bd-uWI"/>
@@ -2391,15 +2388,23 @@
                                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                             <color key="textColor" red="0.98479340260000003" green="1" blue="0.98859505189999997" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
+                                                            <variation key="widthClass=compact" misplaced="YES">
+                                                                <rect key="frame" x="65" y="103" width="59" height="21"/>
+                                                            </variation>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chulalongkorn university" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bs3-wG-wXf">
                                                             <rect key="frame" x="20" y="147" width="205" height="21"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <color key="textColor" red="0.98479340260000003" green="1" blue="0.98859505189999997" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
+                                                            <variation key="widthClass=compact" misplaced="YES">
+                                                                <rect key="frame" x="0.0" y="127" width="189" height="21"/>
+                                                            </variation>
                                                         </label>
                                                     </subviews>
-                                                    <variation key="widthClass=compact" alignment="center" axis="vertical"/>
+                                                    <variation key="widthClass=compact" alignment="center" axis="vertical" misplaced="YES">
+                                                        <rect key="frame" x="106" y="-144" width="189" height="147"/>
+                                                    </variation>
                                                 </stackView>
                                             </subviews>
                                             <color key="backgroundColor" red="0.01176470588" green="0.7843137255" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -2480,19 +2485,19 @@
                                 <rect key="frame" x="0.0" y="383" width="600" height="91"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zmL-2C-svW" id="66i-P7-rml">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="90"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="90.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mind" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7BQ-bk-VHD">
                                             <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                             <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" text="asdfasdfasdfasdfasdfasdfasdfadfasdfasdfasdfasdfasdfasdf" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CJA-tO-b9u">
                                             <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default_profile" translatesAutoresizingMaskIntoConstraints="NO" id="evq-gV-UQC">
@@ -2695,6 +2700,6 @@
         <image name="pic_arrow" width="64" height="64"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Wsg-KC-BBq"/>
+        <segue reference="iId-YZ-gEw"/>
     </inferredMetricsTieBreakers>
 </document>
