@@ -20,6 +20,7 @@ class ViewTranslationTableViewController: UITableViewController {
         super.viewDidLoad()
         getQuestionContent()
         getAnswersContent()
+        self.refreshControl?.addTarget(self, action: "refresh:", forControlEvents: UIControlEvents.ValueChanged)
     }
     
     override func didReceiveMemoryWarning() {
@@ -39,18 +40,26 @@ class ViewTranslationTableViewController: UITableViewController {
             cell.lab_from_language.text = cont.from_lang
             cell.lab_content.text = cont.content
             cell.lab_to_language.text = cont.to_lang
+            cell.lab_number_of_answer.text = String(answers.count) + " answers"
             cell.selectionStyle = UITableViewCellSelectionStyle.None
             return cell
         }
         else if indexPath.row == answers.count+1{
             let cell:PostAnswerTableViewCell = tableView.dequeueReusableCellWithIdentifier("post_answer_translation")as! PostAnswerTableViewCell
+            cell.btn_post_answer.tag = indexPath.row
+            cell.btn_post_answer.addTarget(self, action: #selector(ViewTranslationTableViewController.postAnswer(_:)), forControlEvents: .TouchUpInside)
             cell.selectionStyle = UITableViewCellSelectionStyle.None
             return cell
         }
         else{
             let cell:AnswerTranslaTableViewCell = tableView.dequeueReusableCellWithIdentifier("answer_question") as! AnswerTranslaTableViewCell
-            cell.lab_name.text = "\(answers[indexPath.row - 1].userprofile.firstname) \(answers[indexPath.row - 1].userprofile.lastname)"
+            cell.lab_name.text = answers[indexPath.row-1].owner
             cell.lab_answer.text = answers[indexPath.row - 1].content
+            cell.lab_sum_vote.text = answers[indexPath.row - 1].vote
+            let link : String = "http://128.199.141.51:8000"+answers[indexPath.row-1].userprofile.user_pic
+            let url = NSURL(string: link)
+            let data = NSData(contentsOfURL: url!)
+            cell.img_profile.image = UIImage(data: data!)
             cell.selectionStyle = UITableViewCellSelectionStyle.None
             return cell
         }
@@ -63,8 +72,7 @@ class ViewTranslationTableViewController: UITableViewController {
         } else if indexPath.row == answers.count+1{
             return 210
         } else {
-            tableView.estimatedRowHeight = 104
-            return UITableViewAutomaticDimension
+            return 104 + UITableViewAutomaticDimension
         }
     }
     
@@ -105,6 +113,7 @@ class ViewTranslationTableViewController: UITableViewController {
         
         Alamofire.request(.GET, "http://128.199.141.51:8000/api/answers/id/\(id_question)", headers: headers)
             .responseJSON { response in
+                self.answers.removeAll()
                 var json: NSArray!
                 var dict: NSDictionary!
                 do {
@@ -125,20 +134,69 @@ class ViewTranslationTableViewController: UITableViewController {
                             answer.userprofile.email = dictUserprofile.valueForKey("email") as! String
                             answer.userprofile.user_pic = dictUserprofile.valueForKey("user_pic") as! String
                             answer.userprofile.work = dictUserprofile.valueForKey("work") as! String
-                            // vote still bug
-//                            let dictVote: NSDictionary = dict.valueForKey("vote") as! NSDictionary
-//                            answer.vote = Vote()
-//                            answer.vote.owner = dictVote.valueForKey("owner") as! String
-//                            answer.vote.answer = dictVote.valueForKey("answer") as! String
-//                            answer.vote.score = dictVote.valueForKey("score") as! String
                             
+                            let dictVote: NSArray = dict.valueForKey("vote") as! NSArray
+                            var sum : Int = 0
+                            for vote in dictVote{
+                                sum += vote.valueForKey("score") as! Int
+                            }
+                            answer.vote = String(sum)
                             self.answers.append(answer)
                         }
                     }
                     self.tableView.reloadData()
+                    self.refreshControl?.endRefreshing()
                 } catch {
                     print(error)
                 }
         }
     }
+    @IBAction func postAnswer(sender: AnyObject) {
+        let indexPath = NSIndexPath(forRow: sender.tag, inSection: 0)
+        let cell : PostAnswerTableViewCell = self.tableView.cellForRowAtIndexPath(indexPath) as! PostAnswerTableViewCell
+        let content : String = cell.edt_type_answer.text!
+        if(content != ""){
+            let headers = [
+                "Authorization": self.token as String,
+                "Accept": "application/json"
+            ]
+            print(self.token)
+            print(content)
+            print(self.id_question)
+            let parameters = [
+                "content": content,
+                "question": self.id_question,
+                ]
+            
+            Alamofire.request(.POST, "http://128.199.141.51:8000/api/answers/", headers: headers,parameters: parameters)
+                .responseJSON { response in
+                    self.answers.removeAll()
+                    self.getAnswersContent()
+                    cell.edt_type_answer.text = ""
+            }
+        }else{
+            showAlert("Please fill your answer")
+        }
+        
+    }
+    
+    func showAlert(title:String){
+        let alertController = UIAlertController(title: title, message: nil, preferredStyle: .Alert)
+        
+        let cancelAction = UIAlertAction(title: "Ok", style: .Cancel) { (action) in
+            // ...
+        }
+        
+        alertController.addAction(cancelAction)
+        self.presentViewController(alertController, animated: true) {
+        }
+    }
+    
+    func refresh(sender:AnyObject)
+    {
+        getAnswersContent()
+    }
+    
+    
+    
 }

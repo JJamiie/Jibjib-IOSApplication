@@ -14,5 +14,5 @@ struct Answer {
     var content: String!
     var id: String!
     var userprofile: Profile!
-    var vote: Vote!
+    var vote: String!
 }

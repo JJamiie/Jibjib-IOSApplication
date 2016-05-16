@@ -21,6 +21,11 @@ class FeedTableViewController: UITableViewController {
         super.viewDidLoad()
         self.header.frame =  CGRectMake(0 , 0, self.view.frame.width, 60)
         setToken()
+        self.refreshControl?.addTarget(self, action: "refresh:", forControlEvents: UIControlEvents.ValueChanged)
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
         getQuestion()
     }
     
@@ -76,6 +81,7 @@ class FeedTableViewController: UITableViewController {
     func getQuestion(){
         Alamofire.request(.GET, "http://128.199.141.51:8000/api/questions/", parameters: nil)
             .responseJSON { response in
+                self.questions.removeAll()
                 var json: NSArray!
                 do {
                     json = try NSJSONSerialization.JSONObjectWithData(response.data!, options: NSJSONReadingOptions()) as? NSArray
@@ -96,6 +102,7 @@ class FeedTableViewController: UITableViewController {
                         }
                     }
                     self.tableView.reloadData()
+                    self.refreshControl?.endRefreshing()
                 } catch {
                     print(error)
                 }
@@ -109,8 +116,15 @@ class FeedTableViewController: UITableViewController {
                 destination.id_question = questions[indexpath!.row].id
                 destination.token = self.token
             }
+        }else if segue.identifier == "create_question"{
+            if let destination : CreateTranslationViewController = segue.destinationViewController as? CreateTranslationViewController{
+                destination.token = self.token
+            }
         }
-     
+    }
+    func refresh(sender:AnyObject)
+    {
+        getQuestion()
     }
     
 }
