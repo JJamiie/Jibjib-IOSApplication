@@ -11,10 +11,13 @@ import UIKit
 class ViewTranslationTableViewController: UITableViewController {
     
     var id_question : String!
+    var token : String!
     var content = [Question]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        print(self.token)
+        print(self.id_question)
     }
     
     override func didReceiveMemoryWarning() {
