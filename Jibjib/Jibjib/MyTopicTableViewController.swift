@@ -19,6 +19,10 @@ class MyTopicTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setToken()
+        self.refreshControl?.addTarget(self, action: "refresh:", forControlEvents: UIControlEvents.ValueChanged)
+    }
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
         getMyTopic()
     }
     
@@ -62,7 +66,6 @@ class MyTopicTableViewController: UITableViewController {
         cell.lab_content.text = questions[indexPath.row].content
         cell.lab_time.text = questions[indexPath.row].created_at
         cell.lab_name.text = questions[indexPath.row].owner
-
         return cell
     }
     
@@ -81,6 +84,7 @@ class MyTopicTableViewController: UITableViewController {
         
         Alamofire.request(.GET, "http://128.199.141.51:8000/api/questions/own/", headers: headers)
             .responseJSON { response in
+                self.questions.removeAll()
                 var json: NSArray!
                 do {
                     json = try NSJSONSerialization.JSONObjectWithData(response.data!, options: NSJSONReadingOptions()) as? NSArray
@@ -101,6 +105,7 @@ class MyTopicTableViewController: UITableViewController {
                         }
                     }
                     self.tableView.reloadData()
+                    self.refreshControl?.endRefreshing()
                 } catch {
                     print(error)
                 }
@@ -115,5 +120,9 @@ class MyTopicTableViewController: UITableViewController {
                 destination.token = self.token
             }
         }
+    }
+    func refresh(sender:AnyObject)
+    {
+        self.getMyTopic()
     }
 }

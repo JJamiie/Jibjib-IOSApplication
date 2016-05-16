@@ -13,6 +13,7 @@ class AnswerTranslaTableViewCell: UITableViewCell {
     @IBOutlet weak var img_profile: UIImageView!
     @IBOutlet weak var lab_name: UILabel!
     @IBOutlet weak var lab_answer: UILabel!
+    @IBOutlet weak var lab_sum_vote: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
