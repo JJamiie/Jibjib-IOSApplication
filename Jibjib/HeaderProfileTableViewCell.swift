@@ -12,6 +12,9 @@ class HeaderProfileTableViewCell: UITableViewCell {
     @IBOutlet weak var img_profile: UIImageView!
     @IBOutlet weak var txt_name: UILabel!
     @IBOutlet weak var txt_work: UILabel!
+    @IBOutlet weak var txt_answers: UILabel!
+    @IBOutlet weak var txt_votes: UILabel!
+    @IBOutlet weak var txt_comments: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
