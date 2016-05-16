@@ -13,5 +13,4 @@ struct Comment {
     var commenter: String!
     var content: String!
     var id: String!
-//    var userprofile: Profile!
 }
