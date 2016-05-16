@@ -38,7 +38,7 @@ class ProfileTableViewController: UITableViewController {
             let cell :HeaderProfileTableViewCell = tableView.dequeueReusableCellWithIdentifier("header_profile") as! HeaderProfileTableViewCell
             // Configure the cell...
             cell.selectionStyle = UITableViewCellSelectionStyle.None
-            cell.img_profile.image = UIImage(contentsOfFile: profile[indexPath.row].user_pic)
+//            cell.img_profile.image = UIImage(contentsOfFile: profile[indexPath.row].user_pic)
             cell.txt_name.text = "\(profile[indexPath.row].firstname) \(profile[indexPath.row].lastname)"
             cell.txt_work.text = profile[indexPath.row].work
             return cell
