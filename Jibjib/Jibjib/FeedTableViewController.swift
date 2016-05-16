@@ -101,15 +101,16 @@ class FeedTableViewController: UITableViewController {
                 }
         }
     }
+    
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "cell_question"{
             if let destination : ViewTranslationTableViewController = segue.destinationViewController as? ViewTranslationTableViewController{
                 let indexpath = tableView.indexPathForSelectedRow
                 destination.id_question = questions[indexpath!.row].id
                 destination.token = self.token
-                
             }
         }
+     
     }
     
 }
