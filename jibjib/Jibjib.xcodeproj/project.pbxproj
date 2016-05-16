@@ -33,6 +33,8 @@
 		CB2F83CA1CD352A400A882E6 /* JibjibUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2F83C91CD352A400A882E6 /* JibjibUITests.swift */; };
 		CB3711C11CE87440009084CB /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3711C01CE87440009084CB /* Profile.swift */; };
 		CB3711C31CE874DA009084CB /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3711C21CE874DA009084CB /* Comment.swift */; };
+		CB3711C51CE8F721009084CB /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3711C41CE8F721009084CB /* Answer.swift */; };
+		CB3711C71CE8FF00009084CB /* Vote.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB3711C61CE8FF00009084CB /* Vote.swift */; };
 		CB456EBB1CDC80A20021EF8A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB456EBA1CDC80A20021EF8A /* LoginViewController.swift */; };
 		CB456EC71CDC827D0021EF8A /* FeedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB456EC61CDC827D0021EF8A /* FeedTableViewController.swift */; };
 		CB456EC91CDC82AA0021EF8A /* MyTopicTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB456EC81CDC82AA0021EF8A /* MyTopicTableViewController.swift */; };
@@ -97,6 +99,8 @@
 		CB2F83CB1CD352A400A882E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB3711C01CE87440009084CB /* Profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		CB3711C21CE874DA009084CB /* Comment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		CB3711C41CE8F721009084CB /* Answer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
+		CB3711C61CE8FF00009084CB /* Vote.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vote.swift; sourceTree = "<group>"; };
 		CB456EBA1CDC80A20021EF8A /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		CB456EC61CDC827D0021EF8A /* FeedTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedTableViewController.swift; sourceTree = "<group>"; };
 		CB456EC81CDC82AA0021EF8A /* MyTopicTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTopicTableViewController.swift; sourceTree = "<group>"; };
@@ -213,6 +217,8 @@
 				99F0934C1CE8526100EED0D7 /* Question.swift */,
 				CB3711C01CE87440009084CB /* Profile.swift */,
 				CB3711C21CE874DA009084CB /* Comment.swift */,
+				CB3711C41CE8F721009084CB /* Answer.swift */,
+				CB3711C61CE8FF00009084CB /* Vote.swift */,
 			);
 			name = Struct;
 			sourceTree = "<group>";
@@ -551,12 +557,14 @@
 				99AE9E351CE72E1400D9F4FC /* PaddingLabel.swift in Sources */,
 				CB456ED11CDC84C80021EF8A /* TabBarController.swift in Sources */,
 				CB456EC91CDC82AA0021EF8A /* MyTopicTableViewController.swift in Sources */,
+				CB3711C51CE8F721009084CB /* Answer.swift in Sources */,
 				99F0934B1CE83F8400EED0D7 /* BorderBottomUITextField.swift in Sources */,
 				99F0934D1CE8526200EED0D7 /* Question.swift in Sources */,
 				99AE9E1A1CE463F300D9F4FC /* ProfileTableViewController.swift in Sources */,
 				99F093561CE877BB00EED0D7 /* QuestionTranslationTableViewCell.swift in Sources */,
 				CB456EC71CDC827D0021EF8A /* FeedTableViewController.swift in Sources */,
 				99AE9E211CE65BD600D9F4FC /* CommentProfileTableViewCell.swift in Sources */,
+				CB3711C71CE8FF00009084CB /* Vote.swift in Sources */,
 				99AE9E3B1CE7378100D9F4FC /* CreateTranslationViewController.swift in Sources */,
 				99AE9E391CE7355500D9F4FC /* RoundWhiteBorderImageView.swift in Sources */,
 			);

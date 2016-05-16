@@ -11,6 +11,7 @@ import Alamofire
 
 class MyTopicTableViewController: UITableViewController {
     
+    var id_question: String!
     var token : String!
     var dict :NSDictionary!
     var questions = [Question]()
@@ -62,20 +63,10 @@ class MyTopicTableViewController: UITableViewController {
         cell.lab_time.text = questions[indexPath.row].created_at
         cell.lab_name.text = questions[indexPath.row].owner
 
-        
         return cell
     }
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if segue.identifier == "cell_question"{
-            if let destination : ViewTranslationTableViewController = segue.destinationViewController as? ViewTranslationTableViewController{
-                if let indexpath = tableView.indexPathForSelectedRow{
-                    destination.id_question = questions[indexpath.row].id
-                }
-            }
-        }
-    }
-    
+ 
     func setToken(){
         if let tbc : TabBarController = self.tabBarController as? TabBarController{
             self.token = tbc.token
@@ -116,4 +107,13 @@ class MyTopicTableViewController: UITableViewController {
         }
     }
     
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "cell_question"{
+            if let destination : ViewTranslationTableViewController = segue.destinationViewController as? ViewTranslationTableViewController{
+                let indexpath = tableView.indexPathForSelectedRow
+                destination.id_question = questions[indexpath!.row].id
+                destination.token = self.token
+            }
+        }
+    }
 }

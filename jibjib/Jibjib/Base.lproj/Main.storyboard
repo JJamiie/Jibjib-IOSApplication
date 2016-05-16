@@ -904,7 +904,7 @@
                                     <outlet property="lab_time" destination="IhO-QX-IO3" id="8bm-s7-lK0"/>
                                     <outlet property="lab_title" destination="4l9-cq-pza" id="iaG-fM-ren"/>
                                     <outlet property="lab_to_language" destination="XoV-XI-uwe" id="zqk-dh-hN9"/>
-                                    <segue destination="ric-gM-goK" kind="show" id="iId-YZ-gEw"/>
+                                    <segue destination="ric-gM-goK" kind="show" identifier="cell_question" id="iId-YZ-gEw"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -1358,7 +1358,7 @@
                                     <outlet property="lab_time" destination="AR9-BF-VhD" id="3Kp-ku-7Ts"/>
                                     <outlet property="lab_title" destination="i8g-CW-Ac4" id="COC-2w-Snm"/>
                                     <outlet property="lab_to_language" destination="R0l-xa-Al9" id="2I3-VJ-FqA"/>
-                                    <segue destination="ric-gM-goK" kind="show" id="Wsg-KC-BBq"/>
+                                    <segue destination="ric-gM-goK" kind="show" identifier="cell_question" id="Wsg-KC-BBq"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -1632,7 +1632,7 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="lab_content" destination="sc6-kt-wde" id="ioS-sE-CTQ"/>
-                                    <outlet property="lab_from_language" destination="Kl8-hB-EZq" id="how-JJ-tRo"/>
+                                    <outlet property="lab_from_language" destination="XXS-1N-WbA" id="YhX-1c-tyu"/>
                                     <outlet property="lab_number_of_answer" destination="AYH-6k-o5B" id="Bak-hg-cHp"/>
                                     <outlet property="lab_to_language" destination="zBI-rT-EB7" id="IR3-5S-XwC"/>
                                 </connections>
@@ -2193,12 +2193,18 @@
                                                             <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
                                                             <color key="textColor" red="0.0025468899886615937" green="0.81399494523784355" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
+                                                            <variation key="heightClass=compact-widthClass=compact" misplaced="YES">
+                                                                <rect key="frame" x="38" y="45" width="55" height="17"/>
+                                                            </variation>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ylq-7o-Qzc">
                                                             <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                                             <fontDescription key="fontDescription" type="system" weight="medium" pointSize="27"/>
                                                             <color key="textColor" red="0.98479340260000003" green="1" blue="0.98859505189999997" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
+                                                            <variation key="heightClass=compact-widthClass=compact" misplaced="YES">
+                                                                <rect key="frame" x="57" y="13" width="17.5" height="32.5"/>
+                                                            </variation>
                                                         </label>
                                                     </subviews>
                                                     <color key="backgroundColor" red="0.24780890804597699" green="0.65938767748478688" blue="0.94901960784313721" alpha="1" colorSpace="calibratedRGB"/>
@@ -2391,6 +2397,9 @@
                                                             <variation key="widthClass=compact" misplaced="YES">
                                                                 <rect key="frame" x="65" y="103" width="59" height="21"/>
                                                             </variation>
+                                                            <variation key="heightClass=compact-widthClass=compact" misplaced="YES">
+                                                                <rect key="frame" x="65" y="103" width="59" height="21"/>
+                                                            </variation>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chulalongkorn university" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bs3-wG-wXf">
                                                             <rect key="frame" x="20" y="147" width="205" height="21"/>
@@ -2400,9 +2409,15 @@
                                                             <variation key="widthClass=compact" misplaced="YES">
                                                                 <rect key="frame" x="0.0" y="127" width="189" height="21"/>
                                                             </variation>
+                                                            <variation key="heightClass=compact-widthClass=compact" misplaced="YES">
+                                                                <rect key="frame" x="0.0" y="127" width="189" height="21"/>
+                                                            </variation>
                                                         </label>
                                                     </subviews>
                                                     <variation key="widthClass=compact" alignment="center" axis="vertical" misplaced="YES">
+                                                        <rect key="frame" x="106" y="-144" width="189" height="147"/>
+                                                    </variation>
+                                                    <variation key="heightClass=compact-widthClass=compact" misplaced="YES">
                                                         <rect key="frame" x="106" y="-144" width="189" height="147"/>
                                                     </variation>
                                                 </stackView>
@@ -2700,6 +2715,6 @@
         <image name="pic_arrow" width="64" height="64"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="iId-YZ-gEw"/>
+        <segue reference="Wsg-KC-BBq"/>
     </inferredMetricsTieBreakers>
 </document>

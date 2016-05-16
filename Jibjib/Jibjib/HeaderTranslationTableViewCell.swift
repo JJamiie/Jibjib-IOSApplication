@@ -10,7 +10,8 @@ import UIKit
 
 class HeaderTranslationTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var lab_from_language: NSLayoutConstraint!
+    
+    @IBOutlet weak var lab_from_language: UILabel!
     @IBOutlet weak var lab_content: UILabel!
     @IBOutlet weak var lab_to_language: UILabel!
     @IBOutlet weak var lab_number_of_answer: UILabel!
