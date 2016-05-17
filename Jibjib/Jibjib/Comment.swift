@@ -13,4 +13,5 @@ struct Comment {
     var commenter: String!
     var content: String!
     var id: String!
+    var commenter_pic: String!
 }

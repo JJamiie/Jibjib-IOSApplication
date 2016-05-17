@@ -9,7 +9,7 @@
 import UIKit
 import Alamofire
 
-class CreateTranslationViewController: UIViewController,UIAlertViewDelegate {
+class CreateTranslationViewController: UIViewController,UIAlertViewDelegate, UITextFieldDelegate, UITextViewDelegate {
     
     var itemLanguageFrom = ["Thai","English","Chinese"]
     var itemLanguageTo = ["English","Thai","Chinese"]
@@ -23,7 +23,16 @@ class CreateTranslationViewController: UIViewController,UIAlertViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         edt_content.textContainerInset = UIEdgeInsets(top: 15, left: 20, bottom: 15, right: 20)
-        
+        edt_content.delegate = self
+        edt_translation_title.delegate = self
+    }
+    
+    func textView(textView: UITextView, shouldChangeTextInRange range: NSRange, replacementText text: String) -> Bool {
+        if(text == "\n") {
+            textView.resignFirstResponder()
+            return false
+        }
+        return true
     }
     
     override func didReceiveMemoryWarning() {
@@ -98,4 +107,8 @@ class CreateTranslationViewController: UIViewController,UIAlertViewDelegate {
         }
     }
     
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
 }

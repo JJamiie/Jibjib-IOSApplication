@@ -19,4 +19,8 @@ struct Profile {
     var count_own_ans: String!
     var count_own_vote: String!
     var own_comment: Comment!
+    init(){
+        firstname = ""
+        lastname = ""
+    }
 }

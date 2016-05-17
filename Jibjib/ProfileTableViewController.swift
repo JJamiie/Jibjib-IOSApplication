@@ -39,11 +39,12 @@ class ProfileTableViewController: UITableViewController {
             // Configure the cell...
             cell.selectionStyle = UITableViewCellSelectionStyle.None
             //user profile pic
-//            let link : String = profile.user_pic
-//            let url = NSURL(string: link)
-//            let data = NSData(contentsOfURL: url!)
-//            cell.img_profile.image = UIImage(data: data!)
-            
+            if(self.profile.user_pic != nil){
+                let link : String = profile.user_pic
+                let url = NSURL(string: link)
+                let data = NSData(contentsOfURL: url!)
+                cell.img_profile.image = UIImage(data: data!)
+            }
             cell.txt_name.text = "\(profile.firstname) \(profile.lastname)"
             cell.txt_work.text = profile.work
             cell.txt_answers.text = profile.count_own_ans
@@ -57,6 +58,12 @@ class ProfileTableViewController: UITableViewController {
             cell.lab_name.text = self.comment[indexPath.row-1].commenter
             cell.lab_content.text = self.comment[indexPath.row-1].content
             //commenter's profile pic
+            if(self.comment[indexPath.row-1].commenter_pic != nil){
+                let link : String = "http://128.199.141.51:8000"+self.comment[indexPath.row-1].commenter_pic
+                let url = NSURL(string: link)
+                let data = NSData(contentsOfURL: url!)
+                cell.img_profile.image = UIImage(data: data!)
+            }
             
             return cell
         }
@@ -109,6 +116,7 @@ class ProfileTableViewController: UITableViewController {
                                 comm.content = a.valueForKey("content") as! String
                                 comm.id = String(a.valueForKey("id") as! NSNumber)
                                 comm.owner = a.valueForKey("owner") as! String
+                                comm.commenter_pic = (a.valueForKey("userprofile") as! NSDictionary).valueForKey("user_pic") as! String
                                 self.comment.append(comm)
                             }
                         }

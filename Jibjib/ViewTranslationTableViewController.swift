@@ -197,6 +197,8 @@ class ViewTranslationTableViewController: UITableViewController {
         getAnswersContent()
     }
     
-    
-    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
 }
